@@ -1,11 +1,16 @@
 import React from "react";
+
+//Components
 import Navigation from "../Navigation";
-// Component
+import Home from "../Home";
+
+
 
 
 const App = () => (
   <div>
     <Navigation/>
+    <Home/>
   </div>
 );
 

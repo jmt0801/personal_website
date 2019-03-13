@@ -97,6 +97,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./public/src/Components/Home/home.scss":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./public/src/Components/Home/home.scss ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800);\", \"\"]);\nexports.push([module.i, \"@import url(https://use.typekit.net/zvz3aox.css);\", \"\"]);\nvar urlEscape = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/url-escape.js */ \"./node_modules/css-loader/dist/runtime/url-escape.js\");\nvar ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../../dist/images/home_bg_image.jpg */ \"./public/dist/images/home_bg_image.jpg\"));\n\n// Module\nexports.push([module.i, \"#home {\\n  height: 100%;\\n  background: url(\" + ___CSS_LOADER_URL___0___ + \") no-repeat center center;\\n  background-size: cover; }\\n\\n.home-container {\\n  width: 100%;\\n  height: 100vh;\\n  background-color: RGBA(0, 0, 0, 0.5);\\n  display: block; }\\n\\n.text-box {\\n  position: absolute;\\n  top: 42%;\\n  left: 50%;\\n  transform: translate(-50%, -50%);\\n  width: 75%;\\n  text-align: center; }\\n\\n.home-h2 {\\n  display: block;\\n  color: #d97b59;\\n  mix-blend-mode: difference;\\n  font-size: 35px;\\n  font-family: adobe-garamond-pro, serif;\\n  font-style: italic;\\n  font-weight: 600;\\n  letter-spacing: 15.5px;\\n  line-height: 1.5em;\\n  text-transform: none;\\n  animation: moveInRight 1.5s ease-out; }\\n\\n.home-h1 {\\n  color: white;\\n  display: block;\\n  font-size: 80px;\\n  font-family: 'Alegreya Sans SC', sans-serif;\\n  font-weight: 700;\\n  letter-spacing: 17.5px;\\n  line-height: 1em;\\n  text-transform: uppercase;\\n  text-align: center;\\n  animation-name: moveInLeft;\\n  animation-duration: 1.5s;\\n  animation-timing-function: east-out; }\\n\\n@keyframes moveInLeft {\\n  0% {\\n    opacity: 0;\\n    transform: translateX(-100px); }\\n  80% {\\n    transform: translateX(10px); }\\n  100% {\\n    opacity: 1;\\n    transform: translate(0); } }\\n\\n@keyframes moveInRight {\\n  0% {\\n    opacity: 0;\\n    transform: translateX(100px); }\\n  80% {\\n    transform: translateX(-10px); }\\n  100% {\\n    opacity: 1;\\n    transform: translate(0); } }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./public/src/Components/Home/home.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./public/src/Components/Navigation/navigation.scss":
 /*!*****************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./public/src/Components/Navigation/navigation.scss ***!
@@ -104,7 +115,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#navbar {\\n  width: 100%;\\n  float: left;\\n  margin: 0 0 3em 0;\\n  padding: 0;\\n  list-style: none;\\n  background-color: #f2f2f2;\\n  border-bottom: 1px solid #ccc;\\n  border-top: 1px solid #ccc; }\\n\\n#navbar li {\\n  float: right; }\\n\\n#navbar li a {\\n  display: block;\\n  padding: 8px 15px;\\n  text-decoration: none;\\n  font-weight: bold;\\n  color: #069;\\n  border-right: 1px solid #ccc; }\\n\\n#navbar li a:hover {\\n  color: #c00;\\n  background-color: #fff; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./public/src/Components/Navigation/navigation.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"#navbar {\\n  width: 100%;\\n  float: left;\\n  margin: 0 0 3em 0;\\n  padding: 0;\\n  list-style: none;\\n  background-color: #f2f2f2;\\n  border-bottom: 1px solid #ccc;\\n  border-top: 1px solid #ccc; }\\n\\n#navbar li {\\n  float: left; }\\n\\n#navbar li a {\\n  display: block;\\n  padding: 8px 15px;\\n  text-decoration: none;\\n  font-weight: bold;\\n  color: #069;\\n  border-right: 1px solid #ccc; }\\n\\n#navbar li a:hover {\\n  color: #c00;\\n  background-color: #fff; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./public/src/Components/Navigation/navigation.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -117,6 +128,18 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/url-escape.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function escape(url, needQuotes) {\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return '\"' + url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n') + '\"';\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/url-escape.js?");
 
 /***/ }),
 
@@ -296,6 +319,17 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./public/dist/images/home_bg_image.jpg":
+/*!**********************************************!*\
+  !*** ./public/dist/images/home_bg_image.jpg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"ee99c80cf5ffa26ac8c5c494cc9a760e.jpg\";\n\n//# sourceURL=webpack:///./public/dist/images/home_bg_image.jpg?");
+
+/***/ }),
+
 /***/ "./public/src/Components/App/index.jsx":
 /*!*********************************************!*\
   !*** ./public/src/Components/App/index.jsx ***!
@@ -304,7 +338,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Navigation */ \"./public/src/Components/Navigation/index.jsx\");\n\n // Component\n\nvar App = function App() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./public/src/Components/App/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Navigation */ \"./public/src/Components/Navigation/index.jsx\");\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Home */ \"./public/src/Components/Home/index.jsx\");\n //Components\n\n\n\n\nvar App = function App() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./public/src/Components/App/index.jsx?");
 
 /***/ }),
 
@@ -319,6 +353,29 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 
 /***/ }),
 
+/***/ "./public/src/Components/Home/home.scss":
+/*!**********************************************!*\
+  !*** ./public/src/Components/Home/home.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/sass-loader/lib/loader.js!./home.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./public/src/Components/Home/home.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./public/src/Components/Home/home.scss?");
+
+/***/ }),
+
+/***/ "./public/src/Components/Home/index.jsx":
+/*!**********************************************!*\
+  !*** ./public/src/Components/Home/index.jsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.scss */ \"./public/src/Components/Home/home.scss\");\n/* harmony import */ var _home_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Home = function Home() {\n  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n    id: \"home\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n    className: \"home-container\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n    className: \"text-box\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"h2\", {\n    className: \"home-h2\"\n  }, \"I'm here to code blah blah blah blah \"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"h1\", {\n    className: \"home-h1\"\n  }, \"Jun Kim\"))));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./public/src/Components/Home/index.jsx?");
+
+/***/ }),
+
 /***/ "./public/src/Components/Navigation/index.jsx":
 /*!****************************************************!*\
   !*** ./public/src/Components/Navigation/index.jsx ***!
@@ -327,7 +384,7 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.scss */ \"./public/src/Components/Navigation/navigation.scss\");\n/* harmony import */ var _navigation_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navigation_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Navigation = function Navigation() {\n  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n    id: \"navigation\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"ul\", {\n    id: \"navbar\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Home\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"About\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Skills\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Portfolio\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Contact\"))));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Navigation);\n\n//# sourceURL=webpack:///./public/src/Components/Navigation/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navigation_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navigation.scss */ \"./public/src/Components/Navigation/navigation.scss\");\n/* harmony import */ var _navigation_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_navigation_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar Navigation = function Navigation() {\n  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"div\", {\n    id: \"navigation\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"ul\", {\n    id: \"navbar\"\n  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#home\"\n  }, \"Home\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"About\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Skills\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Portfolio\")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"li\", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(\"a\", {\n    href: \"#\"\n  }, \"Contact\"))));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Navigation);\n\n//# sourceURL=webpack:///./public/src/Components/Navigation/index.jsx?");
 
 /***/ }),
 
