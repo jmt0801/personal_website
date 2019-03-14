@@ -1,3 +1,12 @@
+/*Colors:
+
+Darker Blue: #2C3B59 
+Lighter Tan: #BFA694 
+Darker Brown: #7F4707 
+Lighter Blue: #415E8C 
+Orange Brown: #D97B59
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800');
 
 @import url("https://use.typekit.net/zvz3aox.css");
@@ -16,6 +25,7 @@
 .home-container{
   width: 100%;
     height: 100vh;
+    // clip-path: inset(200px 0 350px 0);
     background-color: RGBA(0, 0, 0, 0.5);
     // display: flex;
     // flex-direction: column;

@@ -5,8 +5,8 @@ const Home = () => (
   <div id="home">
     <div className="home-container">
       <div className="text-box">
-        <h2 className="home-h2">I'm here to code blah blah blah blah </h2>
-        <h1 className="home-h1">Jun Kim</h1>
+        <h1 className="home-h1">Hello, I'm Jun</h1>
+        <h2 className="home-h2">blah blah blah blah blah something here</h2>
       </div>
     </div>
   </div>
