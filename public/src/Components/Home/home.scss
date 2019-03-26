@@ -11,6 +11,10 @@ Orange Brown: #D97B59
 
 @import url("https://use.typekit.net/zvz3aox.css");
 
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
 
 #home {
   height: 100%;
@@ -50,10 +54,10 @@ Orange Brown: #D97B59
   display: block;
   color:#d97b59;
   mix-blend-mode: difference; 
-  font-size: 35px;
+  font-size: 40px;
   font-family: adobe-garamond-pro, serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 650;
   letter-spacing: 15.5px;
   line-height: 1.5em;
   text-transform: none;
@@ -112,4 +116,18 @@ Orange Brown: #D97B59
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block; 
+  
+}
+
+.btn-hire {
+  background-color: #BFA694;
+  color: #2C3B59;
 }

@@ -3,14 +3,17 @@ import React from "react";
 //Components
 import Navigation from "../Navigation";
 import Home from "../Home";
-
+import About from "../About";
 
 
 
 const App = () => (
   <div>
-    <Navigation/>
-    <Home/>
+    <div id ="page-wrap">
+      <Navigation/>
+      <Home/>
+      <About/>
+    </div>
   </div>
 );
 

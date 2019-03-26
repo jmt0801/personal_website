@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*Colors:
+
+Darker Blue: #2C3B59 
+Lighter Tan: #BFA694 
+Darker Brown: #7F4707 
+Lighter Blue: #415E8C 
+Orange Brown: #D97B59
+White Tan: #f8f1e9;
+*/
+
+#about{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.about-container{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.about-picture-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 400px;
+  background: #BFA694;
+  margin: 5px;
+
+}
+
+.about-picture-container img{
+  display: flex;
+  height: auto;
+  width: 300px;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.about-text-container{
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70%;
+  justify-content: center;
+  background: #2C3B59;
+  margin: 5px;
+}
