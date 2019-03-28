@@ -6,7 +6,7 @@ const Navigation = () => (
     <div>
       <ul className="main-menu">
         <li className ="menu-item"><a href="#home">Home</a></li>
-        <li className ="menu-item"><a href="#">About</a></li>
+        <li className ="menu-item"><a href="#about">About</a></li>
         <li className ="menu-item"><a href="#">Skills</a></li>
         <li className ="menu-item"><a href="#">Portfolio</a></li>
         <li className ="menu-item"><a href="#">Contact</a></li>
