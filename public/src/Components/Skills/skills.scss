@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+//Colors:
+
+$color-darker-blue: #2C3B59;
+$color-lighter-tan: #BFA694;
+$color-darker-brown: #7F4707;
+$color-lighter-blue: #415E8C;
+$color-orange-brown: #D97B59;
+$color-white-tan: #f8f1e9;
+$color-white-smoke-bg: #f9f9f7;
+
+#skills {
+  height: auto;
+  background: $color-white-smoke-bg;
+  font-family: 'Lato', sans-serif;
+}
+
+.skills-title {
+  color: $color-lighter-blue;
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  letter-spacing: 12.5px;
+}
+
+.skills-hr {
+  max-width: 100px;
+  border-color: $color-darker-blue;
+  border-top: 10px solid;
+}
+
+.skills-main-container {
+  background: $color-lighter-tan;
+  margin: 50px;
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.skills-container {
+  height: auto;
+  margin: 20px 1em;
+  padding: 1.5rem;
+  border-radius: 3px;
+  background: $color-darker-blue;
+  box-shadow: 0 1.5rem 4rem rgba(black, .15);
+  letter-spacing: 3.5px;
+  flex: 0 1 20%;
+  transition: transform .3s;
+
+  i {
+    font-size: 5rem;
+    color: $color-orange-brown;
+    margin-bottom: 5rem;
+  }
+
+  h3 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.03); 
+  }
+}

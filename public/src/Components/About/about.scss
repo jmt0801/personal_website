@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-/*Colors:
+//Colors:
 
-Darker Blue: #2C3B59 
-Lighter Tan: #BFA694 
-Darker Brown: #7F4707 
-Lighter Blue: #415E8C 
-Orange Brown: #D97B59
-White Tan: #f8f1e9;
-*/
+$color-darker-blue: #2C3B59;
+$color-lighter-tan: #BFA694;
+$color-darker-brown: #7F4707;
+$color-lighter-blue: #415E8C;
+$color-orange-brown: #D97B59;
+$color-white-tan: #f8f1e9;
+$color-white-smoke-bg: #f9f9f7;
+
+
 
 #about{
   height: auto;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: $color-white-smoke-bg;
   font-family: 'Lato', sans-serif;
 }
 
 .about-title {
-  color: #D97B59;
+  color: $color-orange-brown;
   font-size: 75px;
   font-weight: bold;
   text-transform: uppercase;
@@ -29,7 +31,7 @@ White Tan: #f8f1e9;
 
 .about-hr {
   max-width: 100px;
-  border-color: #D97B59;
+  border-color: $color-orange-brown;
   border-top: 10px solid;
 }
 
@@ -45,7 +47,7 @@ White Tan: #f8f1e9;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background: #BFA694;
+  background: $color-lighter-tan;
   height: 175px;
   width: 225px;
   margin-left: 50px;
@@ -82,7 +84,7 @@ White Tan: #f8f1e9;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background: #2C3B59;
+  background: $color-darker-blue;
   display: flex;
   justify-content: center;
   margin: 50px 50px 50px
@@ -118,7 +120,7 @@ White Tan: #f8f1e9;
     }
     
     .list-item-word {
-      color: #D97B59;
+      color: $color-orange-brown;
       font-style: italic
     }
 

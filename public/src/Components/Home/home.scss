@@ -1,15 +1,17 @@
-/*Colors:
-
-Darker Blue: #2C3B59 
-Lighter Tan: #BFA694 
-Darker Brown: #7F4707 
-Lighter Blue: #415E8C 
-Orange Brown: #D97B59
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800');
 
 @import url("https://use.typekit.net/zvz3aox.css");
+
+//Colors:
+
+$color-darker-blue: #2C3B59;
+$color-lighter-tan: #BFA694;
+$color-darker-brown: #7F4707;
+$color-lighter-blue: #415E8C;
+$color-orange-brown: #D97B59;
+$color-white-tan: #f8f1e9;
+$color-white-smoke-bg: #f9f9f7;
+
 
 #page-wrap {
   text-align: center;
@@ -52,7 +54,7 @@ Orange Brown: #D97B59
 .home-h2{
 
   display: block;
-  color:#d97b59;
+  color: $color-orange-brown;
   mix-blend-mode: difference; 
   font-size: 40px;
   font-family: adobe-garamond-pro, serif;
@@ -125,9 +127,4 @@ Orange Brown: #D97B59
   padding: 15px 40px;
   display: inline-block; 
   
-}
-
-.btn-hire {
-  background-color: #BFA694;
-  color: #2C3B59;
 }

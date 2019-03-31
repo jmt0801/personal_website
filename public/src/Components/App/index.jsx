@@ -4,6 +4,7 @@ import React from "react";
 import Navigation from "../Navigation";
 import Home from "../Home";
 import About from "../About";
+import Skills from "../Skills";
 
 
 
@@ -13,8 +14,10 @@ const App = () => (
       <Navigation/>
       <Home/>
       <About/>
+      <Skills/>
     </div>
   </div>
 );
+
 
 export default App;
