@@ -97,6 +97,7 @@ $color-white-smoke-bg: #f9f9f7;
       justify-content: center;
       align-items: center;
       color: white;
+
     }
     
     
@@ -121,10 +122,5 @@ $color-white-smoke-bg: #f9f9f7;
     
     .list-item-word {
       color: $color-orange-brown;
-      font-style: italic
+      font-style: italic;
     }
-
-
-.about-item-2 {
-  align-items: flex-end
-}
