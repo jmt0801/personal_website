@@ -14,15 +14,71 @@ const Portfolio = () => (
           </div>
           <h4 className="card__heading">
             <span className="card__heading-span">
-            Currently Viewing
+              Currently Viewing
             </span>
           </h4>
           <div className="card__details">
-            Details
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Sass</li>
+            </ul>
           </div>
         </div>
         <div className="card-side card-side-back ">
-          Back
+          <h4 className="card__back-title">
+            Personal Website
+          </h4>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-side card-side-front">
+          <div className="card__picture card__picture--2"> 
+          </div>
+          <h4 className="card__heading">
+            <span className="card__heading-span">
+              Amazon System Design
+            </span>
+          </h4>
+          <div className="card__details">
+            <ul>
+              <li>Node.js</li>
+              <li>Postgres</li>
+              <li>Nginx</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+        </div>
+        <div className="card-side card-side-back ">
+          <h4 className="card__back-title">
+            Amazon System Design
+          </h4>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-side card-side-front">
+          <div className="card__picture card__picture--3"> 
+          </div>
+          <h4 className="card__heading">
+            <span className="card__heading-span">
+              Airbnb Listings Page
+            </span>
+          </h4>
+          <div className="card__details">
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>CSS</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+        <div className="card-side card-side-back ">
+        <h4 className="card__back-title">
+          Airbnb Listings Page
+        </h4>
         </div>
       </div>
     </div>
