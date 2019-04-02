@@ -1,14 +1,28 @@
 import React, {Component} from 'react';
 
-// class Button extends Component {
-//   constructor(props) {
-//     super(props);
-    
-//   }
-// }
+class Button extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isClicked: false,
+    }
 
-const Button =() => (
-  <div>hi</div>
-)
+    this.testProps = this.testProps.bind(this)
+  }
+
+
+  testProps = (event) => {
+    console.log(this.props.formValues)
+  }
+
+  render() {
+    return (
+      <a onClick= {this.testProps}>
+        Test
+      </a>
+    )
+  }
+}
+
 
 export default Button;
