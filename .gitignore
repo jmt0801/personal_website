@@ -1,1 +1,4 @@
 node_modules
+
+#Gmail API
+.env
