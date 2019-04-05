@@ -43,7 +43,7 @@ const Skills = () => (
       </div>
       <div className="skills-container">
         <i className="fas fa-cube"></i>
-        <h3>webpack</h3>
+        <h3>webpack/parcel</h3>
       </div>
     </div>
   </div>
