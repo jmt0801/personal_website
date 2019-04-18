@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:700');
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
 
 //Colors:
 
-$color-darker-blue: #2C3B59;
-$color-lighter-tan: #BFA694;
-$color-darker-brown: #7F4707;
-$color-lighter-blue: #415E8C;
-$color-orange-brown: #D97B59;
+$color-darker-blue: #2c3b59;
+$color-lighter-tan: #bfa694;
+$color-darker-brown: #7f4707;
+$color-lighter-blue: #415e8c;
+$color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
 
-
-#navigation{
-	position: fixed;
+#navigation {
+  position: fixed;
   text-transform: uppercase;
   background-color: $color-lighter-tan;
   width: 100%;
@@ -21,14 +20,13 @@ $color-white-smoke-bg: #f9f9f7;
 }
 
 .main-menu {
-
-	display: flex;
+  display: flex;
   padding: 20px;
   width: 100%;
   justify-content: flex-end;
-	opacity: 1;
-  font-family: 'Lato', sans-serif;
-  
+  opacity: 1;
+  font-family: "Lato", sans-serif;
+
   li {
     display: flex;
     position: relative;
@@ -42,12 +40,11 @@ $color-white-smoke-bg: #f9f9f7;
       color: #f2f2f2;
       opacity: 1;
     }
-   }
-    
-  li:hover {
-    *{
-    color: $color-orange-brown;
-    }
-   }
-}
+  }
 
+  li:hover {
+    * {
+      color: $color-orange-brown;
+    }
+  }
+}

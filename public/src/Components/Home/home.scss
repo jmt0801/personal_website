@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800');
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800");
 
 @import url("https://use.typekit.net/zvz3aox.css");
 
 //Colors:
 
-$color-darker-blue: #2C3B59;
-$color-lighter-tan: #BFA694;
-$color-darker-brown: #7F4707;
-$color-lighter-blue: #415E8C;
-$color-orange-brown: #D97B59;
+$color-darker-blue: #2c3b59;
+$color-lighter-tan: #bfa694;
+$color-darker-brown: #7f4707;
+$color-lighter-blue: #415e8c;
+$color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
-
 
 #page-wrap {
   text-align: center;
@@ -20,42 +19,38 @@ $color-white-smoke-bg: #f9f9f7;
 
 #home {
   height: 100%;
-  background: url(../../../dist/images/home_bg_image.jpg)
-    no-repeat center center;
+  background: url(../../../dist/images/home_bg_image.jpg) no-repeat center
+    center;
   background-size: cover;
   // overflow: hidden;
   // background-attachment: fixed;
 }
 
-
-.home-container{
+.home-container {
   width: 100%;
-    height: 100vh;
-    // clip-path: inset(200px 0 350px 0);
-    background-color: RGBA(0, 0, 0, 0.5);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    display: block;
+  height: 100vh;
+  // clip-path: inset(200px 0 350px 0);
+  background-color: RGBA(0, 0, 0, 0.5);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  display: block;
 }
 
 .text-box {
-
   position: absolute;
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
   text-align: center;
-
 }
 
-.home-h2{
-
+.home-h2 {
   display: block;
   color: $color-orange-brown;
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
   font-size: 40px;
   font-family: adobe-garamond-pro, serif;
   font-style: italic;
@@ -64,15 +59,13 @@ $color-white-smoke-bg: #f9f9f7;
   line-height: 1.5em;
   text-transform: none;
   animation: moveInRight 1.5s ease-out;
-
 }
 
-.home-h1{
-
+.home-h1 {
   color: white;
   display: block;
   font-size: 80px;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 700;
   letter-spacing: 17.5px;
   line-height: 1em;
@@ -83,9 +76,6 @@ $color-white-smoke-bg: #f9f9f7;
   animation-duration: 1.5s;
   animation-timing-function: east-out;
   // animation-delay: 3s;
-  
-  
-
 }
 
 @keyframes moveInLeft {
@@ -125,6 +115,5 @@ $color-white-smoke-bg: #f9f9f7;
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
-  display: inline-block; 
-  
+  display: inline-block;
 }

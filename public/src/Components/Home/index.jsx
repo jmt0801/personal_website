@@ -9,8 +9,7 @@ const Home = () => (
         <h2 className="home-h2">I'm a Software Engineer</h2>
       </div>
     </div>
-
   </div>
-)
+);
 
 export default Home;

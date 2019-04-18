@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 //Colors:
 
-$color-darker-blue: #2C3B59;
-$color-lighter-tan: #BFA694;
-$color-darker-brown: #7F4707;
-$color-lighter-blue: #415E8C;
-$color-orange-brown: #D97B59;
+$color-darker-blue: #2c3b59;
+$color-lighter-tan: #bfa694;
+$color-darker-brown: #7f4707;
+$color-lighter-blue: #415e8c;
+$color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
 
 #skills {
   height: auto;
   background: $color-white-smoke-bg;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .skills-title {
@@ -39,7 +38,6 @@ $color-white-smoke-bg: #f9f9f7;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
 }
 
 .skills-container {
@@ -48,11 +46,11 @@ $color-white-smoke-bg: #f9f9f7;
   padding: 1.5rem;
   border-radius: 3px;
   background: $color-darker-blue;
-  box-shadow: 0 1.5rem 4rem rgba(black, .25);
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.25);
   letter-spacing: 3.5px;
   flex: 0 1 20%;
-  transition: transform .3s;
-  
+  transition: transform 0.3s;
+
   i {
     font-size: 5rem;
     color: $color-orange-brown;
@@ -62,10 +60,10 @@ $color-white-smoke-bg: #f9f9f7;
   h3 {
     color: white;
     font-size: 25px;
-    text-transform: uppercase
+    text-transform: uppercase;
   }
 
   &:hover {
-    transform: translateY(-1rem) scale(1.03); 
+    transform: translateY(-1rem) scale(1.03);
   }
 }

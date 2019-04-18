@@ -8,19 +8,17 @@ import Skills from "../Skills";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 
-
 const App = () => (
   <div>
-    <div id ="page-wrap">
-      <Navigation/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Portfolio/>
+    <div id="page-wrap">
+      <Navigation />
+      <Home />
+      <About />
+      <Skills />
+      <Portfolio />
       <Contact />
     </div>
   </div>
 );
-
 
 export default App;

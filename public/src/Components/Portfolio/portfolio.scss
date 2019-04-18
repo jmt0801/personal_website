@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 //Colors:
 
-$color-darker-blue: #2C3B59;
-$color-lighter-tan: #BFA694;
-$color-darker-brown: #7F4707;
-$color-lighter-blue: #415E8C;
-$color-orange-brown: #D97B59;
+$color-darker-blue: #2c3b59;
+$color-lighter-tan: #bfa694;
+$color-darker-brown: #7f4707;
+$color-lighter-blue: #415e8c;
+$color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
-
 
 #portfolio {
   height: auto;
   background: $color-white-smoke-bg;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .portfolio-title {
@@ -34,8 +32,7 @@ $color-white-smoke-bg: #f9f9f7;
 }
 
 .portfolio-container {
-
-  //FUNCTIONALITY 
+  //FUNCTIONALITY
 
   background: $color-darker-blue;
   margin: 50px;
@@ -47,13 +44,13 @@ $color-white-smoke-bg: #f9f9f7;
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; 
+  -moz-perspective: 150rem;
   height: 27rem;
   letter-spacing: 2.5px;
   flex: 0 1 20%;
   position: relative;
 
-  &-side{
+  &-side {
     height: 27rem;
     transition: all 1s ease;
     position: absolute;
@@ -63,25 +60,24 @@ $color-white-smoke-bg: #f9f9f7;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(white, .20);
+    box-shadow: 0 1.5rem 4rem rgba(white, 0.2);
 
-  &-front {
-    background-color: $color-white-smoke-bg;
-  }
+    &-front {
+      background-color: $color-white-smoke-bg;
+    }
 
-  &-back {
-    background-color: $color-lighter-tan;
-    transform: rotateY(180deg)
-
-  }
+    &-back {
+      background-color: $color-lighter-tan;
+      transform: rotateY(180deg);
+    }
   }
 
   &:hover &-side-front {
-    transform: rotateY(-180deg)
+    transform: rotateY(-180deg);
   }
 
   &:hover &-side-back {
-    transform: rotateY(0)
+    transform: rotateY(0);
   }
 
   ///FRONT SIDE PICTURE
@@ -90,17 +86,17 @@ $color-white-smoke-bg: #f9f9f7;
     background-size: contain;
     background-repeat: no-repeat;
     height: 23rem;
-    
-    &--1{
-    background-image: url(../../../dist/images/card_personal_website_photo.png)
+
+    &--1 {
+      background-image: url(../../../dist/images/card_personal_website_photo.png);
     }
 
-    &--2{
-      background-image: url(../../../dist/images/portfolio_amazon_logo.jpg)
+    &--2 {
+      background-image: url(../../../dist/images/portfolio_amazon_logo.jpg);
     }
 
-    &--3{
-      background-image: url(../../../dist/images/portfolio_airbnb_logo.jpg)
+    &--3 {
+      background-image: url(../../../dist/images/portfolio_airbnb_logo.jpg);
     }
   }
 
@@ -111,19 +107,20 @@ $color-white-smoke-bg: #f9f9f7;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
-    color:$color-lighter-blue;
+    color: $color-lighter-blue;
     position: absolute;
     top: 35.5%;
-
   }
 
   &__heading-span {
     padding: 0 0.5rem 0 0.5rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-    background-image: linear-gradient(to right,
-      rgba($color-white-tan, .85), 
-      rgba($color-lighter-tan, .85))
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white-tan, 0.85),
+      rgba($color-lighter-tan, 0.85)
+    );
   }
 
   //FRONT SIDE DETAILS
@@ -137,10 +134,9 @@ $color-white-smoke-bg: #f9f9f7;
     text-align: center;
     transform: translate(-50%, -50%);
 
-    
     ul {
       list-style: none;
-      color:  $color-orange-brown;
+      color: $color-orange-brown;
       text-transform: uppercase;
       font-weight: 600;
       margin: 0 auto;
@@ -150,16 +146,14 @@ $color-white-smoke-bg: #f9f9f7;
         font-size: 1.5rem;
         padding: 0.5rem;
 
-
         &:not(:last-child) {
           border-bottom: 1px solid $color-darker-brown;
         }
-
       }
     }
   }
 
-  //BACKSIDE TITLE 
+  //BACKSIDE TITLE
 
   &__back-title {
     text-transform: uppercase;
