@@ -2,13 +2,16 @@
 
 //Colors:
 
-$color-darker-blue: #2c3b59;
+$color-darker-blue: #24305e;
 $color-lighter-tan: #bfa694;
 $color-darker-brown: #7f4707;
-$color-lighter-blue: #415e8c;
+$color-lighter-blue: #374785;
 $color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
+$color-mustard-yellow: #f8e9a1;
+$color-orage-red: #f76c6c;
+$color-baby-blue: #a8d0e6;
 
 #navigation {
   position: fixed;
@@ -37,14 +40,14 @@ $color-white-smoke-bg: #f9f9f7;
     * {
       text-decoration: none;
       font-size: 18px;
-      color: #f2f2f2;
+      color: white;
       opacity: 1;
     }
   }
 
   li:hover {
     * {
-      color: $color-orange-brown;
+      color: $color-darker-blue;
     }
   }
 }

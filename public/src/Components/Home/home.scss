@@ -1,16 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800");
+@import url("https://fonts.googleapis.com/css?family=Cardo");
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+@import url("https://fonts.googleapis.com/css?family=Arvo:700");
 
 @import url("https://use.typekit.net/zvz3aox.css");
 
 //Colors:
 
-$color-darker-blue: #2c3b59;
+$color-darker-blue: #24305e;
 $color-lighter-tan: #bfa694;
 $color-darker-brown: #7f4707;
-$color-lighter-blue: #415e8c;
+$color-lighter-blue: #374785;
 $color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
+$color-mustard-yellow: #f8e9a1;
+$color-orange-red: #f76c6c;
+$color-baby-blue: #a8d0e6;
+$color-bg-grey: #f6f5f3;
+$color-font-grey: #3d3d3f;
 
 #page-wrap {
   text-align: center;
@@ -19,63 +26,139 @@ $color-white-smoke-bg: #f9f9f7;
 
 #home {
   height: 100%;
-  background: url(../../../dist/images/home_bg_image.jpg) no-repeat center
-    center;
-  background-size: cover;
-  // overflow: hidden;
-  // background-attachment: fixed;
 }
-
+// <--------------------Start: For Mobile View-------------------------->
 .home-container {
   width: 100%;
   height: 100vh;
-  // clip-path: inset(200px 0 350px 0);
-  background-color: RGBA(0, 0, 0, 0.5);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  display: block;
+  background: url(../../../dist/images/main_bggg.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 .text-box {
   position: absolute;
-  top: 42%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
-  text-align: center;
-}
-
-.home-h2 {
-  display: block;
-  color: $color-orange-brown;
-  mix-blend-mode: difference;
-  font-size: 40px;
-  font-family: adobe-garamond-pro, serif;
-  font-style: italic;
-  font-weight: 650;
-  letter-spacing: 15.5px;
-  line-height: 1.5em;
-  text-transform: none;
-  animation: moveInRight 1.5s ease-out;
 }
 
 .home-h1 {
-  color: white;
+  color: #3d3d3f;
   display: block;
-  font-size: 80px;
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-weight: 700;
-  letter-spacing: 17.5px;
+  font-size: 4em;
+  font-family: "Arvo", serif;
+  letter-spacing: 9px;
   line-height: 1em;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  position: relative;
+  top: -0.9em;
 
   animation-name: moveInLeft;
   animation-duration: 1.5s;
   animation-timing-function: east-out;
-  // animation-delay: 3s;
+}
+
+.home-h2 {
+  display: block;
+  color: $color-orange-red;
+  mix-blend-mode: difference;
+  font-size: 2em;
+  font-family: "Exo 2", sans-serif;
+  // font-weight: 650;
+  letter-spacing: 5.5px;
+  line-height: 1em;
+  text-transform: uppercase;
+  animation: moveInRight 1.5s ease-out;
+  text-align: left;
+  // margin-top: 2.5rem;
+  position: relative;
+  top: -0.9em;
+}
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fab {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fab {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #0077b5;
+}
+.social-btns .btn.facebook .fab {
+  color: #0077b5;
+}
+
+.social-btns .btn.github:before {
+  background-color: #6e5494;
+}
+.social-btns .btn.github .fab {
+  color: #6e5494;
+}
+
+.social-btns .btn.resume:before {
+  background-color: #ff0000;
+}
+.social-btns .btn.resume .fab {
+  color: #ff0000;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fab,
+.social-btns .btn:hover .fab {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.social-btns {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btns .btn .fab {
+  font-size: 38px;
+  vertical-align: middle;
 }
 
 @keyframes moveInLeft {
@@ -110,10 +193,81 @@ $color-white-smoke-bg: #f9f9f7;
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-}
+// .home-container {
+//   width: 100%;
+//   height: 100vh;
+//   background: url(../../../dist/images/ps_ws_bg_phone.jpg) no-repeat center
+//     center;
+//   background-size: cover;
+// }
+
+// .text-box {
+//   position: absolute;
+//   top: 45%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 75%;
+// }
+
+// .home-h2 {
+//   display: block;
+//   color: $color-lighter-blue;
+//   mix-blend-mode: difference;
+//   font-size: 50px;
+//   font-family: "Exo 2", sans-serif;
+//   font-weight: 650;
+//   letter-spacing: 5.5px;
+//   line-height: 1.5em;
+//   text-transform: uppercase;
+//   animation: moveInRight 1.5s ease-out;
+//   text-align: left;
+//   margin-top: 2.5rem;
+// }
+
+// .home-h1 {
+//   color: white;
+//   display: block;
+//   font-size: 110px;
+//   font-family: "Cardo", serif;
+//   font-weight: 650;
+//   letter-spacing: 17.5px;
+//   line-height: 1em;
+//   // text-transform: uppercase;
+//   text-align: left;
+
+//   animation-name: moveInLeft;
+//   animation-duration: 1.5s;
+//   animation-timing-function: east-out;
+// }
+
+// @keyframes moveInLeft {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(-100px);
+//   }
+
+//   80% {
+//     transform: translateX(10px);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translate(0);
+//   }
+// }
+
+// @keyframes moveInRight {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(100px);
+//   }
+
+//   80% {
+//     transform: translateX(-10px);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translate(0);
+//   }
+// }
