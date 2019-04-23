@@ -3,7 +3,7 @@ import React from "react";
 
 const Navigation = () => (
   <div id="navigation">
-    <div>
+    {/* <div>
       <ul className="main-menu">
         <li>
           <a href="#home">Home</a>
@@ -21,7 +21,7 @@ const Navigation = () => (
           <a href="#contact">Contact</a>
         </li>
       </ul>
-    </div>
+    </div> */}
   </div>
 );
 

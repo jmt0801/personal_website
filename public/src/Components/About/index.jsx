@@ -1,10 +1,10 @@
-import React from 'react';
-import './about.scss';
-import selfImage from '../../../dist/images/about_self_image.jpeg'
+import React from "react";
+import "./about.scss";
+import selfImage from "../../../dist/images/about_self_image.jpeg";
 
 const About = () => (
   <div id="about">
-    <div className="about-title">
+    {/* <div className="about-title">
       <h1>Who I Am</h1>
       <hr className="about-hr"></hr>
     </div>
@@ -26,8 +26,8 @@ const About = () => (
           <li><span className="list-item-word">care&ensp;</span> about my interactions & relationships with the people I work with</li>
         </ul>
       </div>
-    </div>
+    </div> */}
   </div>
-)
+);
 
 export default About;
