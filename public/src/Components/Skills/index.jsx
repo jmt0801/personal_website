@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => (
   <div id="skills">
-    <div className="skills-title">
+    {/* <div className="skills-title">
       <h1>My Skills</h1>
       <hr className="skills-hr" />
     </div>
@@ -44,7 +44,7 @@ const Skills = () => (
         <i className="fas fa-cube" />
         <h3>webpack/parcel</h3>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 

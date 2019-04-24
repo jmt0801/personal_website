@@ -26,7 +26,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        {/* Name Field */}
+        {/* Name Field
         <Field
           label="Name"
           onChange={event => this.updateField("name", event.target.value)}
@@ -34,21 +34,21 @@ class Form extends Component {
         />
 
         {/* Email Field */}
-        <Field
+        {/* <Field
           label="E-mail"
           onChange={event => this.updateField("email", event.target.value)}
           value={this.state.email}
         />
 
         {/* Message textarea */}
-        <Field
+        {/* <Field
           label="Message"
           onChange={event => this.updateField("message", event.target.value)}
           textarea={true}
           value={this.state.message}
         />
 
-        <Button formValues={this.state} email="hjk013@gmail.com" />
+        <Button formValues={this.state} email="hjk013@gmail.com" /> */}{" "}
       </div>
     );
   }

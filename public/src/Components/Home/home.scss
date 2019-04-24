@@ -44,9 +44,11 @@ $laptop-width: 1024px;
 #home {
   height: 100%;
 }
-// <--------------------Default Mobile View-------------------------->
+
+//<--------------------Default MobileView-------------------------->
 .home-container {
-  width: 100%;
+  display: flex;
+  width: 99%;
   height: 100vh;
   background: url(../../../dist/images/main_bg_200.jpg) no-repeat center center;
   background-size: cover;
@@ -72,36 +74,33 @@ $laptop-width: 1024px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
-  height: auto;
-}
-
-.text-box::after {
-  content: "";
-  clear: both;
-  display: table;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-h1 {
   color: #3d3d3f;
-  display: block;
-  font-size: 4em;
+  font-size: calc(48px + (58-48) * ((100vw - 320px) / (767 - 320)));
   font-family: "Arvo", serif;
   letter-spacing: 0.1em;
   line-height: 1em;
   text-transform: uppercase;
   text-align: left;
-  position: relative;
-  top: -1.5em;
+  margin-top: 40%;
+  margin-bottom: 5%;
 
   //media queries
 
   @include tablet {
-    font-size: 6em;
+    font-size: calc(80px + (3) * ((100vw - 768px) / (1023 - 768)));
     text-align: right;
+    margin: 0;
   }
 
   @include laptop {
-    font-size: 8em;
+    font-size: calc(110px + (3) * ((100vw - 1024px) / (1440 - 1024)));
+    margin: 0;
     text-align: right;
   }
 
@@ -114,26 +113,29 @@ $laptop-width: 1024px;
 .home-h2 {
   display: block;
   color: $color-orange-red;
-  mix-blend-mode: difference;
-  font-size: 2em;
+  // mix-blend-mode: difference;
+  font-size: calc(22px + (30-22) * ((100vw - 320px) / (767 - 320)));
   font-family: "Exo 2", sans-serif;
   letter-spacing: 0.09em;
   line-height: 1em;
   text-transform: uppercase;
   animation: moveInRight 1.5s ease-out;
   text-align: left;
-  position: relative;
-  top: -2em;
+  // position: relative;
+  // top: -2em;
+  margin-bottom: 25%;
 
   //media queries
 
   @include tablet {
-    font-size: 2.5em;
+    font-size: calc(32px + (3) * ((100vw - 768px) / (1023 - 768)));
+    margin-top: 2.5%;
     text-align: right;
   }
 
   @include laptop {
-    font-size: 3.5em;
+    font-size: calc(48px + (3) * ((100vw - 1024px) / (1440 - 1024)));
+    margin-top: 3%;
     text-align: right;
   }
 }
@@ -221,12 +223,11 @@ $laptop-width: 1024px;
   transform: scale(1);
 }
 .social-btns {
-  height: 60px;
+  height: auto;
   margin: auto;
   font-size: 0;
   text-align: center;
-  position: relative;
-  top: 150px;
+  display: flex;
 
   //media queries
 
@@ -280,82 +281,3 @@ $laptop-width: 1024px;
   font-size: 38px;
   vertical-align: middle;
 }
-
-// .home-container {
-//   width: 100%;
-//   height: 100vh;
-//   background: url(../../../dist/images/ps_ws_bg_phone.jpg) no-repeat center
-//     center;
-//   background-size: cover;
-// }
-
-// .text-box {
-//   position: absolute;
-//   top: 45%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 75%;
-// }
-
-// .home-h2 {
-//   display: block;
-//   color: $color-lighter-blue;
-//   mix-blend-mode: difference;
-//   font-size: 50px;
-//   font-family: "Exo 2", sans-serif;
-//   font-weight: 650;
-//   letter-spacing: 5.5px;
-//   line-height: 1.5em;
-//   text-transform: uppercase;
-//   animation: moveInRight 1.5s ease-out;
-//   text-align: left;
-//   margin-top: 2.5rem;
-// }
-
-// .home-h1 {
-//   color: white;
-//   display: block;
-//   font-size: 110px;
-//   font-family: "Cardo", serif;
-//   font-weight: 650;
-//   letter-spacing: 17.5px;
-//   line-height: 1em;
-//   // text-transform: uppercase;
-//   text-align: left;
-
-//   animation-name: moveInLeft;
-//   animation-duration: 1.5s;
-//   animation-timing-function: east-out;
-// }
-
-// @keyframes moveInLeft {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-100px);
-//   }
-
-//   80% {
-//     transform: translateX(10px);
-//   }
-
-//   100% {
-//     opacity: 1;
-//     transform: translate(0);
-//   }
-// }
-
-// @keyframes moveInRight {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(100px);
-//   }
-
-//   80% {
-//     transform: translateX(-10px);
-//   }
-
-//   100% {
-//     opacity: 1;
-//     transform: translate(0);
-//   }
-// }

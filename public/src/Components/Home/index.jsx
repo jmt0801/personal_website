@@ -3,6 +3,7 @@ import React from "react";
 import LaptopBreakpoint from "../responsive_utilities/laptop_bp";
 import TabletBreakpoint from "../responsive_utilities/tablet_bp";
 import PhoneBreakpoint from "../responsive_utilities/phone_bp";
+import bg from "../../../dist/images/main_bg_200.jpg";
 
 const Home = () => (
   <div id="home">
