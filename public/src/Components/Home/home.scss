@@ -42,7 +42,7 @@ $laptop-width: 1024px;
 // }
 
 #home {
-  height: 100%;
+  height: 100vh;
 }
 
 //<--------------------Default MobileView-------------------------->
@@ -79,16 +79,33 @@ $laptop-width: 1024px;
   flex-direction: column;
 }
 
+.home-h1:hover {
+  color: $color-mustard-yellow;
+}
+
+.home-h1:hover::after {
+  transform: translate3d(100%, 0, 0);
+}
+
+.home-h1:hover::before {
+  width: 100%;
+}
+
 .home-h1 {
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  line-height: 1em;
+  display: inline-block;
   color: #3d3d3f;
   font-size: calc(48px + (58-48) * ((100vw - 320px) / (767 - 320)));
   font-family: "Arvo", serif;
   letter-spacing: 0.1em;
-  line-height: 1em;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 40%;
+  margin-top: 25%;
   margin-bottom: 5%;
+  // overflow: hidden;
 
   //media queries
 
@@ -103,11 +120,31 @@ $laptop-width: 1024px;
     margin: 0;
     text-align: right;
   }
+}
 
-  //animation
-  animation-name: moveInLeft;
-  animation-duration: 1.5s;
-  animation-timing-function: east-out;
+.home-h1::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 100%;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+  background: $color-bg-grey;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.home-h1::before {
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #424242;
+  white-space: nowrap;
+  width: 0%;
+  transition: width 0.4s 0.3s;
 }
 
 .home-h2 {
@@ -119,7 +156,6 @@ $laptop-width: 1024px;
   letter-spacing: 0.09em;
   line-height: 1em;
   text-transform: uppercase;
-  animation: moveInRight 1.5s ease-out;
   text-align: left;
   // position: relative;
   // top: -2em;
@@ -141,38 +177,6 @@ $laptop-width: 1024px;
 }
 
 // Text Animation
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  80% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  80% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
 
 //Buttons
 

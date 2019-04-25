@@ -2,10 +2,6 @@ import React from "react";
 import { bubble as Menu } from "react-burger-menu";
 
 class Navigation extends React.Component {
-  showSettings(event) {
-    event.preventDefault();
-  }
-
   render() {
     return (
       <Menu>
@@ -13,13 +9,16 @@ class Navigation extends React.Component {
           Home
         </a>
         <a className="menu-item" href="#about">
-          About
+          About Me
         </a>
         <a className="menu-item" href="/contact">
-          Contact
+          Skills
         </a>
-        <a onClick={this.showSettings} className="menu-item--small" href="">
-          Settings
+        <a className="menu-item" href="/contact">
+          Recent Work
+        </a>
+        <a className="menu-item" href="/contact">
+          Contact Me
         </a>
       </Menu>
     );
