@@ -18,6 +18,7 @@ $color-orange-red: #f76c6c;
 $color-baby-blue: #a8d0e6;
 $color-bg-grey: #f6f5f3;
 $color-font-grey: #3d3d3f;
+$color-whiteish: #f9f8fd;
 
 //<----------breakpoint mixins---------->
 $tablet-width: 768px;
@@ -77,6 +78,15 @@ $laptop-width: 1024px;
   height: 75%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+
+  @include tablet {
+    overflow: visible;
+  }
+
+  @include laptop {
+    overflow: visible;
+  }
 }
 
 .home-h1:hover {
@@ -105,7 +115,6 @@ $laptop-width: 1024px;
   text-align: left;
   margin-top: 25%;
   margin-bottom: 5%;
-  // overflow: hidden;
 
   //media queries
 
@@ -130,10 +139,18 @@ $laptop-width: 1024px;
   top: 50%;
   margin-top: -8px;
   right: 0;
-  background: $color-bg-grey;
+  background: $color-baby-blue;
   transform: translate3d(-100%, 0, 0);
   transition: transform 0.4s;
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+
+  @include tablet {
+    background: $color-bg-grey;
+  }
+
+  @include laptop {
+    background: $color-bg-grey;
+  }
 }
 
 .home-h1::before {

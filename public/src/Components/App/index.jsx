@@ -1,5 +1,5 @@
 import React from "react";
-import "../Navigation/navigation.scss";
+import "../Hamburger/hamburger.scss";
 //Components
 import Navigation from "../Navigation";
 import Home from "../Home";

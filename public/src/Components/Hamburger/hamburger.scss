@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+//Colors:
+
+$color-darker-blue: #24305e;
+$color-lighter-tan: #bfa694;
+$color-darker-brown: #7f4707;
+$color-lighter-blue: #374785;
+$color-orange-brown: #d97b59;
+$color-white-tan: #f8f1e9;
+$color-white-smoke-bg: #f9f9f7;
+$color-mustard-yellow: #f8e9a1;
+$color-orage-red: #f76c6c;
+$color-baby-blue: #a8d0e6;
+$color-bg-grey: #f6f5f3;
+$color-font-grey: #3d3d3f;
+$color-whiteish: #f9f8fd;
+
+//<----------breakpoint mixins---------->
+$tablet-width: 768px;
+$laptop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: "Montserrat", sans-serif;
+
+  /* Give app full page to work with */
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+  height: 100vh;
+}
+
+*:focus {
+  outline: none;
+}
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: $color-font-grey;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  //
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+
+  @include tablet {
+    right: 0;
+    left: 36px;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $color-baby-blue;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: $color-orage-red;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $color-whiteish;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: $color-whiteish;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: red;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
