@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+//Colors:
+
+$color-darker-blue: #24305e;
+$color-lighter-tan: #bfa694;
+$color-darker-brown: #7f4707;
+$color-lighter-blue: #374785;
+$color-orange-brown: #d97b59;
+$color-white-tan: #f8f1e9;
+$color-white-smoke-bg: #f9f9f7;
+$color-mustard-yellow: #f8e9a1;
+$color-orage-red: #f76c6c;
+$color-baby-blue: #a8d0e6;
+$color-bg-grey: #f6f5f3;
+$color-font-grey: #3d3d3f;
+$color-whiteish: #f9f8fd;
+
+.nav-bar-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  background: $color-bg-grey;
+}
+.nav-bar {
+  margin: 0;
+  top: 0;
+  width: 40%;
+  background: $color-bg-grey;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu-items {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  color: $color-font-grey;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-size: calc(20px + (3) * ((100vw - 1024px) / (1440 - 1024)));
+}
+
+li:hover {
+  color: $color-orage-red;
+  background: white;
+}
