@@ -17,12 +17,12 @@ class Navigation extends React.Component {
         </TabletBreakpoint>
         <LaptopBreakpoint>
           <div className="nav-bar-container">
-            <a href="#home">
+            <a href="http://127.0.0.1:5500/public/dist/index.html#home">
               <div id="btn0" className="nav-button">
                 <h1>Home</h1>
               </div>
             </a>
-            <a href="#about">
+            <a href="http://127.0.0.1:5500/public/dist/index.html#about">
               <div id="btn1" className="nav-button">
                 <h1>About Me</h1>
               </div>
