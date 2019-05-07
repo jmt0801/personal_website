@@ -17,14 +17,34 @@ class Navigation extends React.Component {
         </TabletBreakpoint>
         <LaptopBreakpoint>
           <div className="nav-bar-container">
-            <div className="nav-bar">
-              <ul className="nav-menu">
-                <li className="nav-menu-items">About Me</li>
-                <li className="nav-menu-items">Skills</li>
-                <li className="nav-menu-items">Recent Work</li>
-                <li className="nav-menu-items">Contact</li>
-              </ul>
-            </div>
+            <a href="#home">
+              <div id="btn0" className="nav-button">
+                <h1>Home</h1>
+              </div>
+            </a>
+            <a href="#about">
+              <div id="btn1" className="nav-button">
+                <h1>About Me</h1>
+              </div>
+            </a>
+
+            <a href="#skills">
+              <div id="btn2" className="nav-button">
+                <h1>Skills</h1>
+              </div>
+            </a>
+
+            <a href="#portfolio">
+              <div id="btn3" className="nav-button">
+                <h1>Recent Work</h1>
+              </div>
+            </a>
+
+            <a href="#contact">
+              <div id="btn4" className="nav-button">
+                <h1>Contact Me</h1>
+              </div>
+            </a>
           </div>
         </LaptopBreakpoint>
       </div>
