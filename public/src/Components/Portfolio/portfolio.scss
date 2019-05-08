@@ -2,22 +2,45 @@
 
 //Colors:
 
-$color-darker-blue: #2c3b59;
+$color-darker-blue: #24305e;
 $color-lighter-tan: #bfa694;
 $color-darker-brown: #7f4707;
-$color-lighter-blue: #415e8c;
+$color-lighter-blue: #374785;
 $color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
+$color-mustard-yellow: #f8e9a1;
+$color-orange-red: #f76c6c;
+$color-baby-blue: #a8d0e6;
+$color-bg-grey: #f6f5f3;
+$color-font-grey: #3d3d3f;
+$color-whiteish: #f9f8fd;
+
+//<----------breakpoint mixins---------->
+$tablet-width: 768px;
+$laptop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+//<-------------------->
 
 #portfolio {
   height: auto;
-  background: $color-white-smoke-bg;
+  background: $color-bg-grey;
   font-family: "Lato", sans-serif;
 }
 
 .portfolio-title {
-  color: $color-orange-brown;
+  color: $color-orange-red;
   font-size: 75px;
   font-weight: bold;
   text-transform: uppercase;
@@ -27,7 +50,7 @@ $color-white-smoke-bg: #f9f9f7;
 
 .portfolio-hr {
   max-width: 100px;
-  border-color: $color-orange-brown;
+  border-color: $color-orange-red;
   border-top: 10px solid;
 }
 
@@ -63,11 +86,11 @@ $color-white-smoke-bg: #f9f9f7;
     box-shadow: 0 1.5rem 4rem rgba(white, 0.2);
 
     &-front {
-      background-color: $color-white-smoke-bg;
+      background-color: $color-whiteish;
     }
 
     &-back {
-      background-color: $color-lighter-tan;
+      background-color: $color-whiteish;
       transform: rotateY(180deg);
     }
   }
@@ -118,8 +141,8 @@ $color-white-smoke-bg: #f9f9f7;
     -webkit-box-decoration-break: clone;
     background-image: linear-gradient(
       to right,
-      rgba($color-white-tan, 0.85),
-      rgba($color-lighter-tan, 0.85)
+      rgba($color-whiteish, 0.85),
+      rgba($color-mustard-yellow, 0.85)
     );
   }
 
@@ -136,7 +159,7 @@ $color-white-smoke-bg: #f9f9f7;
 
     ul {
       list-style: none;
-      color: $color-orange-brown;
+      color: $color-orange-red;
       text-transform: uppercase;
       font-weight: 600;
       margin: 0 auto;
@@ -147,7 +170,7 @@ $color-white-smoke-bg: #f9f9f7;
         padding: 0.5rem;
 
         &:not(:last-child) {
-          border-bottom: 1px solid $color-darker-brown;
+          border-bottom: 1px solid $color-font-grey;
         }
       }
     }
@@ -159,9 +182,40 @@ $color-white-smoke-bg: #f9f9f7;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 300;
-    color: white;
+    color: $color-whiteish;
     background-color: $color-lighter-blue;
     height: 15%;
     padding-top: 0.5rem;
+  }
+}
+
+.portfolio-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  font-family: "Lato", sans-serif;
+}
+
+.portfolio-button {
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+
+  color: $color-font-grey;
+  box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+
+  &:hover {
+    color: $color-whiteish;
+    box-shadow: $color-lighter-blue 0 0px 0px 40px inset;
   }
 }
