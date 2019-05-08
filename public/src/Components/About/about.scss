@@ -16,6 +16,23 @@ $color-bg-grey: #f6f5f3;
 $color-font-grey: #3d3d3f;
 $color-whiteish: #f9f8fd;
 
+//<----------breakpoint mixins---------->
+$tablet-width: 768px;
+$laptop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+//<-------------------->
+
 #about {
   height: auto;
   display: flex;
@@ -30,21 +47,31 @@ $color-whiteish: #f9f8fd;
 }
 //PHONE_________________________________
 
-.about-title-phone {
+.about-title {
   color: $color-orange-red;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 100px;
   letter-spacing: 12.5px;
-  // position: relative;
+
+  @include tablet {
+    font-size: 60px;
+  }
+
+  @include laptop {
+    font-size: 75px;
+  }
 }
 
-.about-hr-phone {
+.about-hr {
   max-width: 100px;
   border-color: $color-orange-brown;
   border-top: 5px solid;
-  // position: relative;
+
+  @include laptop {
+    border-top: 10px solid;
+  }
 }
 
 .ch-grid {
@@ -79,9 +106,19 @@ $color-whiteish: #f9f8fd;
   position: relative;
   cursor: default;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  background: url("../../../dist/images/about_me_nt.png") no-repeat center /
+  background: url("../../../dist/images/about_self_image.jpeg") no-repeat center /
     cover;
   margin: 0 auto;
+
+  @include tablet {
+    width: 85%;
+    height: 85%;
+  }
+
+  @include laptop {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .ch-thumb {
@@ -90,7 +127,6 @@ $color-whiteish: #f9f8fd;
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
-  box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.5);
   transform-origin: 95% 40%;
   transition: all 0.3s ease-in-out;
 }
@@ -113,14 +149,19 @@ $color-whiteish: #f9f8fd;
 }
 
 .ch-img-1 {
-  background: url(../../../dist/images/about_self_image.jpeg) no-repeat center /
+  background: url("../../../dist/images/about_me_nt.png") no-repeat center /
     cover;
   z-index: 12;
+
+  @include laptop {
+    background: url("../../../dist/images/about_me_nt_laptop.png") no-repeat
+      center / cover;
+  }
 }
 
 .ch-item:hover .ch-thumb {
-  box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.5),
-    0 1px 3px rgba(0, 0, 0, 0.2);
+  // box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.5),
+  //   0 1px 3px rgba(0, 0, 0, 0.2);
   transform: rotate(-110deg);
 }
 .ch-item:hover .ch-info p a {
@@ -128,22 +169,65 @@ $color-whiteish: #f9f8fd;
   transform: translateX(0px) rotate(0deg);
 }
 
-/////////////////////////////////
+.about-text-container {
+  background: $color-whiteish;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 
-.about-title {
-  color: $color-orange-brown;
-  font-size: 75px;
-  font-weight: bold;
+  @include laptop {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: $color-darker-blue;
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 50px;
+  }
+}
+
+.about-text-list {
+  color: $color-font-grey;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  justify-content: center;
+  align-items: flex-start;
+
+  @include tablet {
+    font-size: 30px;
+  }
+
+  @include laptop {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    // text-transform: uppercase
+  }
+}
+
+.about-text-list li {
+  padding: 18px;
+  text-align: left;
+
+  @include laptop {
+    padding: 20px;
+  }
+}
+
+.about-text-list span {
+  color: $color-orange-red;
+  // font-style: italic;
   text-transform: uppercase;
-  margin-top: 50px;
-  letter-spacing: 12.5px;
 }
 
-.about-hr {
-  max-width: 100px;
-  border-color: $color-orange-brown;
-  border-top: 10px solid;
-}
+/////////////////////////////////
+//////////////////////////////
+//Laptop______________________
 
 .about-container {
   height: auto;
@@ -157,71 +241,19 @@ $color-whiteish: #f9f8fd;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background: $color-lighter-tan;
-  height: 175px;
-  width: 225px;
-  margin-left: 50px;
-  margin-top: 50px;
-  z-index: 1;
+  margin: auto;
 }
 
-.about-picture {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  height: auto;
-  width: 250px;
-  z-index: 2;
-  place-self: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.about-shape {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.about-text-container {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  background: $color-darker-blue;
-  display: flex;
-  justify-content: center;
-  margin: 50px 50px 50px;
-}
+// .about-shape {
+//   grid-column-start: 1;
+//   grid-column-end: 2;
+//   grid-row-start: 2;
+//   grid-row-end: 3;
+// }
 
 .about-text-letter-i {
   font-size: 450px;
   justify-content: center;
   align-items: center;
   color: white;
-}
-
-.about-text-list {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: 25px;
-  justify-content: center;
-  align-items: flex-start;
-  // text-transform: uppercase
-}
-
-.about-text-list li {
-  padding: 20px;
-  text-align: left;
-}
-
-.list-item-word {
-  color: $color-orange-brown;
-  font-style: italic;
 }
