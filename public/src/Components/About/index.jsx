@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.scss";
-import selfImage from "../../../dist/images/about_self_image.jpeg";
 import LaptopBreakpoint from "../responsive_utilities/laptop_bp";
 import TabletBreakpoint from "../responsive_utilities/tablet_bp";
 import PhoneBreakpoint from "../responsive_utilities/phone_bp";

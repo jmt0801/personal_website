@@ -200,7 +200,7 @@ $laptop-width: 1024px;
   }
 
   @include laptop {
-    color: white;
+    color: $color-whiteish;
     display: flex;
     flex-direction: column;
     font-size: 25px;
@@ -255,5 +255,5 @@ $laptop-width: 1024px;
   font-size: 450px;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $color-whiteish;
 }
