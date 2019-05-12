@@ -32,8 +32,8 @@ const Portfolio = () => (
               <a href="#" className="portfolio-button">
                 Details
               </a>
-              <a href="#" className="portfolio-button">
-                Github
+              <a href="#" className="portfolio-button2">
+                <i class="fab fa-github" />
               </a>
             </div>
           </div>
@@ -60,8 +60,8 @@ const Portfolio = () => (
               <a href="#" className="portfolio-button">
                 Details
               </a>
-              <a href="#" className="portfolio-button">
-                Github
+              <a href="#" className="portfolio-button2">
+                <i class="fab fa-github" />
               </a>
             </div>
           </div>
@@ -88,8 +88,8 @@ const Portfolio = () => (
               <a href="#" className="portfolio-button">
                 Details
               </a>
-              <a href="#" className="portfolio-button">
-                Github
+              <a href="#" className="portfolio-button2">
+                <i class="fab fa-github" />
               </a>
             </div>
           </div>
