@@ -33,6 +33,10 @@ $laptop-width: 1024px;
 }
 //<-------------------->
 
+.dev {
+  border: 3px solid red;
+}
+
 #portfolio {
   height: auto;
   background: $color-bg-grey;
@@ -41,28 +45,100 @@ $laptop-width: 1024px;
 
 .portfolio-title {
   color: $color-orange-red;
-  font-size: 75px;
+  font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 50px;
   letter-spacing: 12.5px;
+
+  @include laptop {
+    font-size: 75px;
+  }
 }
 
 .portfolio-hr {
   max-width: 100px;
   border-color: $color-orange-red;
-  border-top: 10px solid;
+  border-top: 5px solid;
+
+  @include laptop {
+    border-top: 10px solid;
+  }
 }
 
 .portfolio-container {
   //FUNCTIONALITY
 
-  background: $color-darker-blue;
+  background: $color-bg-grey;
   margin: 50px;
   padding: 50px 0 50px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+
+  @include laptop {
+    background: $color-whiteish;
+    background: $color-darker-blue;
+  }
+}
+
+.mobile-portfolio-card {
+  height: 40vh;
+  min-width: 40vh;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: $color-darker-blue;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-card-pic {
+  height: 50%;
+  padding: 10px;
+  width: 35vh;
+
+  &--1 {
+    background: url(../../../dist/images/card_personal_website_photo.png)
+      no-repeat center / cover;
+  }
+
+  &--2 {
+    background: url(../../../dist/images/portfolio_amazon_logo.jpg) no-repeat
+      center / cover;
+  }
+
+  &--3 {
+    background: url(../../../dist/images/portfolio_airbnb_logo.jpg) no-repeat
+      center / cover;
+  }
+}
+
+.mobile-card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-whiteish;
+  width: 25vh;
+  height: 8vh;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px $color-whiteish(0, 0, 0, 0.9);
+  color: #6e5494;
+  text-decoration: none;
+}
+
+.mobile-card-heading {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: $color-orange-red;
+  margin-top: 10px;
 }
 
 .card {

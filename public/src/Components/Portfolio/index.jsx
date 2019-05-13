@@ -6,6 +6,59 @@ import PhoneBreakpoint from "../responsive_utilities/phone_bp";
 
 const Portfolio = () => (
   <div id="portfolio">
+    <PhoneBreakpoint>
+      <div className="portfolio-title">
+        <h1>Recent Projects</h1>
+        <hr className="portfolio-hr" />
+      </div>
+      <div className="portfolio-container">
+        <div className="mobile-portfolio-card">
+          <div className="mobile-card-pic mobile-card-pic--1" />
+          <marquee
+            behavior="scroll"
+            direction="left"
+            className="mobile-card-heading"
+          >
+            Currently Viewing
+          </marquee>
+          <div className="mobile-card-buttons">
+            <a href="#" className="mobile-card-button">
+              <i className="fab fa-github" /> &nbsp;&nbsp; Github
+            </a>
+          </div>
+        </div>
+        <div className="mobile-portfolio-card">
+          <div className="mobile-card-pic mobile-card-pic--2" />
+          <marquee
+            behavior="scroll"
+            direction="left"
+            className="mobile-card-heading"
+          >
+            Amazon Systems Design
+          </marquee>
+          <div className="mobile-card-buttons">
+            <a href="#" className="mobile-card-button">
+              <i className="fab fa-github" /> &nbsp;&nbsp; Github
+            </a>
+          </div>
+        </div>
+        <div className="mobile-portfolio-card">
+          <div className="mobile-card-pic mobile-card-pic--3" />
+          <marquee
+            behavior="scroll"
+            direction="left"
+            className="mobile-card-heading"
+          >
+            Airbnb Listings Page
+          </marquee>
+          <div className="mobile-card-buttons">
+            <a href="#" className="mobile-card-button">
+              <i className="fab fa-github" /> &nbsp;&nbsp; Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </PhoneBreakpoint>
     <LaptopBreakpoint>
       <div className="portfolio-title">
         <h1>Most Recent Projects</h1>
@@ -32,8 +85,11 @@ const Portfolio = () => (
               <a href="#" className="portfolio-button">
                 Details
               </a>
-              <a href="#" className="portfolio-button2">
-                <i class="fab fa-github" />
+              <a
+                href="https://github.com/hjk013/personal_website"
+                className="portfolio-button2"
+              >
+                <i className="fab fa-github" />
               </a>
             </div>
           </div>
@@ -60,8 +116,11 @@ const Portfolio = () => (
               <a href="#" className="portfolio-button">
                 Details
               </a>
-              <a href="#" className="portfolio-button2">
-                <i class="fab fa-github" />
+              <a
+                href="https://github.com/theamazonprimes/BEC_Jun_Amazon_Descriptions_Module"
+                className="portfolio-button2"
+              >
+                <i className="fab fa-github" />
               </a>
             </div>
           </div>
@@ -88,8 +147,11 @@ const Portfolio = () => (
               <a href="#" className="portfolio-button">
                 Details
               </a>
-              <a href="#" className="portfolio-button2">
-                <i class="fab fa-github" />
+              <a
+                href="https://github.com/HRLA23WhiteWalkers/jun-amenities-module"
+                className="portfolio-button2"
+              >
+                <i className="fab fa-github" />
               </a>
             </div>
           </div>
