@@ -86,6 +86,7 @@ const Skills = () => (
       </div>
     </TabletBreakpoint>
     <LaptopBreakpoint>
+      <div className="parallax-img-skills" />
       <div className="skills-title">
         <h1>My Skills</h1>
         <hr className="skills-hr" />

@@ -35,8 +35,40 @@ $laptop-width: 1024px;
 
 #skills {
   height: auto;
-  background: $color-bg-grey;
+  background: url(../../../dist/images/2.png) no-repeat center center;
+  background-size: cover;
   font-family: "Lato", sans-serif;
+
+  //media queries
+  @include tablet {
+    background: url(../../../dist/images/2.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  @include laptop {
+    background: url(../../../dist/images/2.png);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  font-family: "Lato", sans-serif;
+}
+
+.parallax-img-skills {
+  height: 35vh;
+  background: url(../../../dist/images/design-learn-pattern-247819.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .skills-title {
@@ -109,11 +141,12 @@ $laptop-width: 1024px;
 
 .skills-main-container-laptop {
   background: $color-whiteish;
-  // margin: 50px;
+  margin: 0 100px 0 100px;
   padding: 50px 0 50px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  // width: 80%;
 }
 
 .skills-container-laptop {
@@ -126,6 +159,7 @@ $laptop-width: 1024px;
   letter-spacing: 3.5px;
   flex: 0 1 20pc;
   transition: transform 0.3s;
+  justify-content: center;
 
   i {
     font-size: 5rem;
