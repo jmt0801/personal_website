@@ -42,15 +42,14 @@ body {
 
   /* Give app full page to work with */
   height: 100vh;
-}
-
-#page-wrap {
   text-align: center;
-
-  /* Prevent sidebar from showing a scrollbar on page */
-  overflow: auto;
-  height: 100vh;
 }
+
+// #page-wrap {
+//   /* Prevent sidebar from showing a scrollbar on page */
+//   overflow: auto;
+//   height: 100vh;
+// }
 
 *:focus {
   outline: none;
@@ -88,11 +87,17 @@ body {
     right: 0;
     left: 36px;
   }
+
+  @include laptop {
+    right: 0;
+    left: 36px;
+  }
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: $color-darker-blue;
+  box-shadow: 0.5px 0.5px 1px $color-whiteish;
 }
 
 /* Position and sizing of clickable cross button */

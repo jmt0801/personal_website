@@ -11,13 +11,11 @@ import Contact from "../Contact";
 const App = () => (
   <div id="App">
     <Navigation />
-    <div id="page-wrap">
-      <Home />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
-    </div>
+    <Home />
+    <About />
+    <Skills />
+    <Portfolio />
+    <Contact />
   </div>
 );
 

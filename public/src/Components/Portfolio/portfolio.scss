@@ -70,15 +70,15 @@ $laptop-width: 1024px;
   //FUNCTIONALITY
 
   background: $color-bg-grey;
-  margin: 50px;
-  padding: 50px 0 50px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 
   @include laptop {
-    background: $color-whiteish;
     background: $color-darker-blue;
+    margin: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -86,7 +86,7 @@ $laptop-width: 1024px;
   height: 40vh;
   min-width: 40vh;
   margin: 5px;
-  padding: 5px;
+  padding: 10px 5px 10px 5px;
   border-radius: 3px;
   background: $color-darker-blue;
   box-shadow: 0 1.5rem 4rem rgba(black, 0.12);
@@ -121,15 +121,14 @@ $laptop-width: 1024px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-whiteish;
+  background-color: $color-orange-red;
   width: 25vh;
-  height: 8vh;
+  height: 7vh;
   margin-top: 20px;
-  margin-bottom: 10px;
   font-size: 25px;
   border-radius: 28%;
   box-shadow: 0 5px 15px -5px $color-whiteish(0, 0, 0, 0.9);
-  color: #6e5494;
+  color: $color-whiteish;
   text-decoration: none;
 }
 
@@ -137,7 +136,7 @@ $laptop-width: 1024px;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-size: 25px;
-  color: $color-orange-red;
+  color: $color-whiteish;
   margin-top: 10px;
 }
 

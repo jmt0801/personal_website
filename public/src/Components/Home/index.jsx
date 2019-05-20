@@ -3,6 +3,7 @@ import React from "react";
 import LaptopBreakpoint from "../responsive_utilities/laptop_bp";
 import TabletBreakpoint from "../responsive_utilities/tablet_bp";
 import PhoneBreakpoint from "../responsive_utilities/phone_bp";
+import bg_img from "../../../dist/images/main_bg_400.jpg";
 
 class Home extends React.Component {
   render() {

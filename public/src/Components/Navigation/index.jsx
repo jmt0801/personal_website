@@ -16,13 +16,14 @@ class Navigation extends React.Component {
           <Hamburger />
         </TabletBreakpoint>
         <LaptopBreakpoint>
-          <div className="nav-bar-container">
-            <a href="http://127.0.0.1:5500/public/dist/index.html#home">
+          <Hamburger />
+          {/* <div className="nav-bar-container">
+            <a href="#home">
               <div id="btn0" className="nav-button">
                 <h1>Home</h1>
               </div>
             </a>
-            <a href="http://127.0.0.1:5500/public/dist/index.html#about">
+            <a href="#about">
               <div id="btn1" className="nav-button">
                 <h1>About Me</h1>
               </div>
@@ -45,7 +46,7 @@ class Navigation extends React.Component {
                 <h1>Contact Me</h1>
               </div>
             </a>
-          </div>
+          </div> */}
         </LaptopBreakpoint>
       </div>
     );

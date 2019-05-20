@@ -45,6 +45,17 @@ $laptop-width: 1024px;
 .dev {
   border: 3px solid red;
 }
+
+.parallax-img {
+  height: 35vh;
+  background: url(../../../dist/images/home_bg_image.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed !important;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 //PHONE_________________________________
 
 .about-title {

@@ -87,6 +87,7 @@ const About = () => (
       </div>
     </TabletBreakpoint>
     <LaptopBreakpoint>
+      <div className="parallax-img" />
       <div className="about-title">
         <h1>Who I Am</h1>
         <hr className="about-hr" />

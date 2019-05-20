@@ -37,6 +37,14 @@ $laptop-width: 1024px;
 }
 //<-------------------->
 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 // #page-wrap {
 //   text-align: center;
 //   overflow: auto;
@@ -44,6 +52,7 @@ $laptop-width: 1024px;
 
 #home {
   height: 100vh;
+  overflow-y: auto;
 }
 
 //<--------------------Default MobileView-------------------------->
@@ -62,8 +71,12 @@ $laptop-width: 1024px;
   }
 
   @include laptop {
-    background: url(../../../dist/images/main_bg_400.jpg) no-repeat center
-      center;
+    background: url(../../../dist/images/main_bg_400.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 }
@@ -71,7 +84,7 @@ $laptop-width: 1024px;
 // Heading / Text
 .text-box {
   position: relative;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
@@ -86,6 +99,7 @@ $laptop-width: 1024px;
 
   @include laptop {
     overflow: visible;
+    scroll-behavior: smooth;
   }
 }
 

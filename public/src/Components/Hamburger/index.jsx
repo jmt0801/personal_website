@@ -14,10 +14,10 @@ class Hamburger extends React.Component {
         <a className="menu-item" href="#about">
           About Me
         </a>
-        <a className="menu-item" href="/contact">
+        <a className="menu-item" href="#skills">
           Skills
         </a>
-        <a className="menu-item" href="/contact">
+        <a className="menu-item" href="#portfolio">
           Recent Work
         </a>
         <a className="menu-item" href="/contact">

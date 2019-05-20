@@ -14,13 +14,7 @@ const Portfolio = () => (
       <div className="portfolio-container">
         <div className="mobile-portfolio-card">
           <div className="mobile-card-pic mobile-card-pic--1" />
-          <marquee
-            behavior="scroll"
-            direction="left"
-            className="mobile-card-heading"
-          >
-            Currently Viewing
-          </marquee>
+          <h3 className="mobile-card-heading">Currently Viewing</h3>
           <div className="mobile-card-buttons">
             <a href="#" className="mobile-card-button">
               <i className="fab fa-github" /> &nbsp;&nbsp; Github
@@ -29,13 +23,39 @@ const Portfolio = () => (
         </div>
         <div className="mobile-portfolio-card">
           <div className="mobile-card-pic mobile-card-pic--2" />
-          <marquee
-            behavior="scroll"
-            direction="left"
-            className="mobile-card-heading"
-          >
-            Amazon Systems Design
-          </marquee>
+          <h3 className="mobile-card-heading">Amazon Sys Design</h3>
+          <div className="mobile-card-buttons">
+            <a
+              href="https://github.com/theamazonprimes/BEC_Jun_Amazon_Descriptions_Module"
+              className="mobile-card-button"
+            >
+              <i className="fab fa-github" /> &nbsp;&nbsp; Github
+            </a>
+          </div>
+        </div>
+        <div className="mobile-portfolio-card">
+          <div className="mobile-card-pic mobile-card-pic--3" />
+          <h3 className="mobile-card-heading">Airbnb Listings Page</h3>
+          <div className="mobile-card-buttons">
+            <a
+              href="https://github.com/HRLA23WhiteWalkers/jun-amenities-module"
+              className="mobile-card-button"
+            >
+              <i className="fab fa-github" /> &nbsp;&nbsp; Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </PhoneBreakpoint>
+    <TabletBreakpoint>
+      <div className="portfolio-title">
+        <h1>Recent Projects</h1>
+        <hr className="portfolio-hr" />
+      </div>
+      <div className="portfolio-container">
+        <div className="mobile-portfolio-card">
+          <div className="mobile-card-pic mobile-card-pic--1" />
+          <h3 className="mobile-card-heading">Currently Viewing</h3>
           <div className="mobile-card-buttons">
             <a href="#" className="mobile-card-button">
               <i className="fab fa-github" /> &nbsp;&nbsp; Github
@@ -43,22 +63,31 @@ const Portfolio = () => (
           </div>
         </div>
         <div className="mobile-portfolio-card">
-          <div className="mobile-card-pic mobile-card-pic--3" />
-          <marquee
-            behavior="scroll"
-            direction="left"
-            className="mobile-card-heading"
-          >
-            Airbnb Listings Page
-          </marquee>
+          <div className="mobile-card-pic mobile-card-pic--2" />
+          <h3 className="mobile-card-heading">Amazon Sys Design</h3>
           <div className="mobile-card-buttons">
-            <a href="#" className="mobile-card-button">
+            <a
+              href="https://github.com/theamazonprimes/BEC_Jun_Amazon_Descriptions_Module"
+              className="mobile-card-button"
+            >
+              <i className="fab fa-github" /> &nbsp;&nbsp; Github
+            </a>
+          </div>
+        </div>
+        <div className="mobile-portfolio-card">
+          <div className="mobile-card-pic mobile-card-pic--3" />
+          <h3 className="mobile-card-heading">Airbnb Listings Page</h3>
+          <div className="mobile-card-buttons">
+            <a
+              href="https://github.com/HRLA23WhiteWalkers/jun-amenities-module"
+              className="mobile-card-button"
+            >
               <i className="fab fa-github" /> &nbsp;&nbsp; Github
             </a>
           </div>
         </div>
       </div>
-    </PhoneBreakpoint>
+    </TabletBreakpoint>
     <LaptopBreakpoint>
       <div className="portfolio-title">
         <h1>Most Recent Projects</h1>
