@@ -68,11 +68,10 @@ $laptop-width: 1024px;
 
 .parallax-img {
   height: 35vh;
-  background: url(../../../dist/images/home_bg_image.jpg);
+  background: url(../../../dist/images/aboutpara.png);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-
-  background-position: center;
+  background-position: 0 -320px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -83,7 +82,7 @@ $laptop-width: 1024px;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin-top: 50px;
   letter-spacing: 12.5px;
 
   @include tablet {
