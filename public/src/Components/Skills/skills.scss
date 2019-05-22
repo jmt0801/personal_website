@@ -60,19 +60,6 @@ $laptop-width: 1024px;
   font-family: "Lato", sans-serif;
 }
 
-.parallax-img-skills {
-  height: 35vh;
-  background: url(../../../dist/images/skillspara.png);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-
-  background-position: center;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 2;
-}
-
 .skills-title {
   color: $color-orange-red;
   font-size: 45px;

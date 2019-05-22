@@ -12,8 +12,11 @@ const App = () => (
   <div id="App">
     <Navigation />
     <Home />
+    <div className="parallax-1" />
     <About />
+    <div className="parallax-2" />
     <Skills />
+    <div className="parallax-3" />
     <Portfolio />
     <Contact />
   </div>

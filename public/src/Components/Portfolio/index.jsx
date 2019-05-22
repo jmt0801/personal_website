@@ -89,7 +89,6 @@ const Portfolio = () => (
       </div>
     </TabletBreakpoint>
     <LaptopBreakpoint>
-      <div className="parallax-img-port" />
       <div className="portfolio-title">
         <h1>Most Recent Projects</h1>
         <hr className="portfolio-hr" />

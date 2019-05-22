@@ -41,25 +41,26 @@ $laptop-width: 1024px;
   height: auto;
   background: $color-bg-grey;
   font-family: "Lato", sans-serif;
+
+  @include laptop {
+    background: url(../../../dist/images/3.png);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
-.parallax-img-port {
-  height: 35vh;
-  background: url(../../../dist/images/projpara.png);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+//
 
 .portfolio-title {
   color: $color-orange-red;
   font-size: 45px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 75px;
   letter-spacing: 12.5px;
 
   @include laptop {
