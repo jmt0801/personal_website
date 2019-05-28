@@ -42,8 +42,10 @@ body {
   font-family: "Montserrat", sans-serif;
 
   /* Give app full page to work with */
-  height: 100vh;
+  // height: 100vh;
   text-align: center;
+  // added this to prevent modal from scrolling to the top
+  // overflow: auto;
 }
 
 .parallax-1 {
@@ -59,7 +61,7 @@ body {
 
   @include laptop {
     height: 35vh;
-    background: url(../../../dist/images/aboutpara.png);
+    background: url(../../../dist/images/aboutpara_optimized.png);
     background-attachment: fixed;
     background-position: 0 -320px;
     background-repeat: no-repeat;
@@ -80,7 +82,7 @@ body {
 
   @include laptop {
     height: 35vh;
-    background: url(../../../dist/images/skillspara.png);
+    background: url(../../../dist/images/skillspara_optimized.png);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
 
@@ -103,7 +105,7 @@ body {
 
   @include laptop {
     height: 35vh;
-    background: url(../../../dist/images/projpara.png);
+    background: url(../../../dist/images/projpara-small..jpg);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
 
