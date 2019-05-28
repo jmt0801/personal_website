@@ -1,6 +1,5 @@
 import "./portfolio.scss";
 import React from "react";
-import ReactModal from "react-modal";
 import LaptopBreakpoint from "../responsive_utilities/laptop_bp";
 import TabletBreakpoint from "../responsive_utilities/tablet_bp";
 import PhoneBreakpoint from "../responsive_utilities/phone_bp";
