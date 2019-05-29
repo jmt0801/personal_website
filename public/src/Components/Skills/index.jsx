@@ -13,16 +13,16 @@ const Skills = () => (
       </div>
       <div className="skills-main-container">
         <div className="skills-container">
-          <i className="fab fa-js-square" />
+          <i className="fab fa-js-square " />
         </div>
         <div className="skills-container">
-          <i className="fab fa-css3-alt" />
+          <i className="fab fa-css3-alt " />
         </div>
         <div className="skills-container">
-          <i className="fab fa-react" />
+          <i className="fab fa-react blue" />
         </div>
         <div className="skills-container">
-          <i className="fab fa-node" />
+          <i className="fab fa-node " />
         </div>
         <div className="skills-container">
           <i className="fas fa-server" />
@@ -31,10 +31,10 @@ const Skills = () => (
           <i className="fas fa-database" />
         </div>
         <div className="skills-container">
-          <i className="fab fa-git-square" />
+          <i className="fab fa-git-square orange" />
         </div>
         <div className="skills-container">
-          <i className="fab fa-npm" />
+          <i className="fab fa-npm red" />
         </div>
         <div className="skills-container">
           <i className="fas fa-cube" />
