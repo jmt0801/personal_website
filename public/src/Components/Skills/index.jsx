@@ -8,13 +8,13 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Skills = () => (
   <div id="skills">
     <PhoneBreakpoint>
-      <ScrollAnimation animateIn="bounceInUp">
+      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="skills-title">
           <h1>My Skills</h1>
           <hr className="skills-hr" />
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="bounceInUp">
+      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="skills-main-container">
           <div className="skills-container">
             <i className="fab fa-js-square " />
@@ -47,13 +47,13 @@ const Skills = () => (
       </ScrollAnimation>
     </PhoneBreakpoint>
     <TabletBreakpoint>
-      <ScrollAnimation animateIn="bounceInUp">
+      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="skills-title">
           <h1>My Skills</h1>
           <hr className="skills-hr" />
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="bounceInUp">
+      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="skills-main-container">
           <div className="skills-container">
             <i className="fab fa-js-square" />
@@ -95,13 +95,13 @@ const Skills = () => (
       </ScrollAnimation>
     </TabletBreakpoint>
     <LaptopBreakpoint>
-      <ScrollAnimation animateIn="bounceInUp">
+      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="skills-title">
           <h1>My Skills</h1>
           <hr className="skills-hr" />
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="bounceInUp">
+      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="skills-main-container-laptop">
           <div className="skills-container-laptop">
             <i className="fab fa-js-square" />
