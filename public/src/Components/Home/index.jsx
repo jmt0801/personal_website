@@ -4,6 +4,7 @@ import LaptopBreakpoint from "../responsive_utilities/laptop_bp";
 import TabletBreakpoint from "../responsive_utilities/tablet_bp";
 import PhoneBreakpoint from "../responsive_utilities/phone_bp";
 import bg_img from "../../../dist/images/main_bg_400.jpg";
+import { Animated } from "react-animated-css";
 
 class Home extends React.Component {
   render() {
@@ -13,7 +14,9 @@ class Home extends React.Component {
           <div className="home-container">
             <div className="text-box">
               <h1 className="home-h1">Jun Kim</h1>
-              <h2 className="home-h2">Software Engineer</h2>
+              <Animated animationIn="bounceIn">
+                <h2 className="home-h2">Software Engineer</h2>
+              </Animated>
               <div className="social-btns">
                 <a className="btn resume" href="#">
                   <i className="fab fa-adobe" />
@@ -33,7 +36,10 @@ class Home extends React.Component {
             <div className="text-box">
               <h1 className="home-h1">Jun</h1>
               <h1 className="home-h1">Kim</h1>
-              <h2 className="home-h2">Software Engineer</h2>
+              <Animated animationIn="rubberBand">
+                <h2 className="home-h2">Software Engineer</h2>
+              </Animated>
+
               <div className="social-btns">
                 <a className="btn resume" href="#">
                   <i className="fab fa-adobe" />
@@ -54,7 +60,9 @@ class Home extends React.Component {
             <div className="text-box">
               <h1 className="home-h1">Jun</h1>
               <h1 className="home-h1">Kim</h1>
-              <h2 className="home-h2">Software Engineer</h2>
+              <Animated animationIn="rubberBand">
+                <h2 className="home-h2">Software Engineer</h2>
+              </Animated>
               <div className="social-btns">
                 <a className="btn resume" href="#">
                   <i className="fab fa-adobe" />
