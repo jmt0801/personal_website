@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class Button extends Component {
   constructor(props) {
@@ -7,15 +8,16 @@ class Button extends Component {
       isClicked: false
     };
 
-    this.testProps = this.testProps.bind(this);
+    this.formSubmit = this.formSubmit.bind(this);
   }
 
-  testProps = event => {
-    console.log(this.props.formValues);
+  formSubmit = e => {
+    e.preventDefault();
+    console.log("form values", this.props.formValues);
   };
 
   render() {
-    return <a onClick={this.testProps}>Test</a>;
+    return <a onClick={this.formSubmit}>Test</a>;
   }
 }
 

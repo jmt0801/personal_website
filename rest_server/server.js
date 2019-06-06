@@ -4,10 +4,9 @@ const parser = require("body-parser");
 const nodemailer = require("nodemailer");
 const xoauth2 = require("xoauth2");
 
-//Gmail API
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLEINT_SECRET;
-const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
+require("dotenv").config();
+
+//rest server
 
 const app = express();
 const PORT = process.env.PORT || 1231;
@@ -20,26 +19,64 @@ app.get(" * ", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../public/dist/index.html"));
 });
 
-// app.use('/api', router);
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 
 app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));
 
+//post resquest: receiving data through req.body
 //nodemailer
 
-let transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    xoauth2: xoauth2.createXOAuth2Generator({
-      user: "hjk013@gmail.com",
-      clinetId: CLIENT_ID,
-      clientSecret: CLIENT_SECRET,
-      refreshToken: REFRESH_TOKEN
-    })
-  }
-});
+app.post("/sentmsg", (req, res) => {
+  let data = req.body;
 
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   next();
-// });
+  const output = `
+   <p>You have a new contact request</p>
+   <h3>Contact Details</h3>
+    <ul>
+      <li>Name: ${data.name}</li>
+      <li>Email: ${data.email}</li>
+      <li>Phone: ${data.phone}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${data.message}</p>
+ 
+  `;
+
+  console.log("req.body", req.body);
+
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    auth: {
+      type: "OAuth2",
+      user: process.env.USER_NAME,
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN
+    }
+  });
+
+  let mailOptions = {
+    from: '"Nodemailer Contact" <hjk013@gmail.com>',
+    to: "hjk013@gmail.com",
+    subject: "SOMEONE SENT MSG FROM YOUR PERSONAL WEBSITE",
+    html: output
+  };
+
+  transporter.sendMail(mailOptions, (err, res) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(JSON.stringify(res));
+      console.log("Message sent: %s", info.messageId);
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+      res.send("Success");
+    }
+  });
+});
