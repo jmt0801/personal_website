@@ -5,7 +5,7 @@
 $color-darker-blue: #24305e;
 $color-lighter-tan: #bfa694;
 $color-darker-brown: #7f4707;
-$color-lighter-blue: #374785;
+$color-lighter-blue: hsl(228, 34%, 54%);
 $color-orange-brown: #d97b59;
 $color-white-tan: #f8f1e9;
 $color-white-smoke-bg: #f9f9f7;
@@ -27,7 +27,7 @@ $color-whiteish: #f9f8fd;
 #form {
   font-family: "Lato", sans-serif;
   width: auto;
-  margin: 50px auto 100px auto;
+  // margin: 50px auto 100px auto;
   display: flex;
 }
 
@@ -84,10 +84,11 @@ $color-whiteish: #f9f8fd;
   font-size: 1.3em;
   align-items: center;
   justify-content: center;
-  background-color: #ececea;
+  background-color: $color-darker-blue;
   span {
     font-family: "Lato", sans-serif;
     margin: 5px 0 30px 0;
+    color: $color-whiteish;
   }
 
   i {

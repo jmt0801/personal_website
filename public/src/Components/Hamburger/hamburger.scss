@@ -118,6 +118,30 @@ body {
   }
 }
 
+.parallax-4 {
+  @include tablet {
+    height: 25vh;
+    background: url(../../../dist/images/Optimized-adult-beverage-brainstorming-541522.jpg);
+
+    background-attachment: fixed;
+    background-position: -220px -275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-bg-grey;
+  }
+
+  @include laptop {
+    height: 35vh;
+    background: url(../../../dist/images/Optimized-adult-beverage-brainstorming-541522.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 // #page-wrap {
 //   /* Prevent sidebar from showing a scrollbar on page */
 //   overflow: auto;

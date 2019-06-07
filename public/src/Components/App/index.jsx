@@ -18,6 +18,8 @@ const App = () => (
     <Skills />
     <div className="parallax-3" />
     <Portfolio />
+    <div className="parallax-4" />
+
     <Contact />
   </div>
 );
