@@ -20,12 +20,17 @@ app.get(" * ", (req, res) => {
 });
 
 app.use(function(req, res, next) {
+  console.log("request", req.url, req.body, req.method);
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept, x-token"
   );
-  next();
+  if (req.method === "OPTIONS") {
+    res.end();
+  } else {
+    next();
+  }
 });
 
 app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));
@@ -73,10 +78,13 @@ app.post("/sentmsg", (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      console.log(JSON.stringify(res));
-      console.log("Message sent: %s", info.messageId);
-      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-      res.send("Success");
+      // console.log(JSON.stringify(res));
+      console.log("Message sent: %s", res.messageId);
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(res));
+      console.log("res", res);
+      res.end();
     }
   });
+
+  res.end();
 });

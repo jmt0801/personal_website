@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Field from "../Field";
 import Button from "../Button";
+import "./form.scss";
 
 class Form extends Component {
   constructor(props) {
@@ -64,35 +65,46 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
-        {/* /* Name Field */}
-        <Field
-          label="Name"
-          onChange={event => this.updateField("name", event.target.value)}
-          value={this.state.name}
-        />
-        {/* {/* /* Email Field * */}
-        <Field
-          label="E-mail"
-          onChange={event => this.updateField("email", event.target.value)}
-          value={this.state.email}
-        />
-        <Field
-          label="Phone"
-          onChange={event => this.updateField("phone", event.target.value)}
-          textarea={true}
-          value={this.state.phone}
-        />
-        {/* Message textarea */}
-        <Field
-          label="Message"
-          onChange={event => this.updateField("message", event.target.value)}
-          textarea={true}
-          value={this.state.message}
-        />
-        {/* <Button formValues={this.state} email="hjk013@gmail.com" /> */}
+      <div id="form">
+        <div className="contact-container">
+          <h1>I'd love to hear from you.</h1>
+          <h2>Feedbacks of any kind are welcome too!</h2>
+          {/* /* Name Field */}
+          <Field
+            label="Name"
+            onChange={event => this.updateField("name", event.target.value)}
+            value={this.state.name}
+          />
+          {/* {/* /* Email Field * */}
+          <Field
+            label="E-mail"
+            onChange={event => this.updateField("email", event.target.value)}
+            value={this.state.email}
+          />
+          <Field
+            label="Phone"
+            onChange={event => this.updateField("phone", event.target.value)}
+            value={this.state.phone}
+          />
+          {/* Message textarea */}
+          <Field
+            label="Message"
+            onChange={event => this.updateField("message", event.target.value)}
+            textarea={true}
+            value={this.state.message}
+          />
+          {/* <Button formValues={this.state} email="hjk013@gmail.com" /> */}
 
-        <button onClick={this.formSubmit}>{this.state.buttonText}</button>
+          <button onClick={this.formSubmit}>{this.state.buttonText}</button>
+        </div>
+        <div className="info-container">
+          <i class="fa fa-envelope" aria-hidden="true" />
+          <span>hjk013@gmail.com</span>
+          <i class="fa fa-phone-square" aria-hidden="true" />
+          <span>(909)292-5001 </span>
+          <i class="fa fa-location-arrow" aria-hidden="true" />
+          <span>Los Angeles, CA </span>
+        </div>
       </div>
     );
   }

@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./field.scss";
 
 const Field = props => (
   <div>
-    <h4>{props.label}</h4>
     <input
       onChange={props.onChange}
       type={props.textarea ? "textarea" : "text"}
       value={props.value}
+      placeholder={props.label}
     />
   </div>
 );
