@@ -122,24 +122,27 @@ $laptop-width: 1024px;
   line-height: 1em;
   display: inline-block;
   color: #3d3d3f;
-  font-size: calc(48px + (58-48) * ((100vw - 320px) / (767 - 320)));
+  font-size: 50px;
+  font-size: 11vw;
   font-family: "Arvo", serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 25%;
+  margin-top: 30%;
   margin-bottom: 5%;
 
   //media queries
 
   @include tablet {
-    font-size: calc(80px + (3) * ((100vw - 768px) / (1023 - 768)));
+    font-size: 70px;
+    font-size: 7.5vw;
     text-align: right;
     margin: 0;
   }
 
   @include laptop {
-    font-size: calc(110px + (3) * ((100vw - 1024px) / (1440 - 1024)));
+    font-size: 110px;
+    font-size: 7.5vw;
     margin: 0;
     text-align: right;
   }
