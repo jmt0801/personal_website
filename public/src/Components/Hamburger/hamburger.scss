@@ -54,7 +54,7 @@ body {
     background: url(../../../dist/images/aboutpara-small.jpg);
 
     background-attachment: fixed;
-    background-position: -220px -275px;
+    // background-position: -220px -275px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $color-bg-grey;
@@ -76,7 +76,7 @@ body {
     background: url(../../../dist/images/skillspara-small..jpg);
 
     background-attachment: fixed;
-    background-position: -220px -275px;
+    // background-position: -220px -275px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $color-bg-grey;
@@ -100,7 +100,7 @@ body {
     background: url(../../../dist/images/projpara-small..jpg);
 
     background-attachment: fixed;
-    background-position: -220px -275px;
+    // background-position: -220px -275px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $color-bg-grey;
@@ -121,10 +121,12 @@ body {
 .parallax-4 {
   @include tablet {
     height: 25vh;
+    min-width: 100vw;
+
     background: url(../../../dist/images/Optimized-adult-beverage-brainstorming-541522.jpg);
 
     background-attachment: fixed;
-    background-position: -220px -275px;
+    // background-position: -220px -275px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $color-bg-grey;
@@ -132,6 +134,7 @@ body {
 
   @include laptop {
     height: 35vh;
+    min-width: 100vw;
     background: url(../../../dist/images/Optimized-adult-beverage-brainstorming-541522.jpg);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -140,6 +143,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.dev {
+  border: 3px solid red;
 }
 
 // #page-wrap {

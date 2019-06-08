@@ -16,7 +16,23 @@ $color-bg-grey: #f6f5f3;
 $color-font-grey: #3d3d3f;
 $color-whiteish: #f9f8fd;
 
-input::-webkit-input-placeholder,
+//<----------breakpoint mixins---------->
+$tablet-width: 768px;
+$laptop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+_ _ _ _ _ _ input::-webkit-input-placeholder,
 input[type="textarea"]::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
@@ -109,7 +125,9 @@ input[type="textarea"]:hover::focus:-ms-placeholder {
 input {
   font-family: "Lato", sans-serif;
   font-size: 1em;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 275px;
   height: 50px;
   padding: 0px 15px 0px 15px;
 
@@ -131,8 +149,9 @@ input:hover {
   color: $color-whiteish;
 }
 input[type="textarea"] {
-  width: 500px;
+  width: 100%;
   max-width: 500px;
+  min-width: 275px;
   height: 130px;
   max-height: 130px;
   padding: 15px;
