@@ -34,7 +34,11 @@ $laptop-width: 1024px;
 
 html,
 body {
-  margin: 0;
+  z-index: 0;
+  max-width: 100%;
+  height: auto;
+  overflow-x: visible;
+  background: $color-bg-grey;
 }
 
 //APP STYLING- move later ////
@@ -42,9 +46,10 @@ body {
   font-family: "Montserrat", sans-serif;
 
   /* Give app full page to work with */
-  // height: 100vh;
+  height: auto;
+  max-width: 100%;
   text-align: center;
-  // added this to prevent modal from scrolling to the top
+  // addedthis to prevent modal from scrolling to the top
   // overflow: auto;
 }
 

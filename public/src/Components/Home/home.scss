@@ -185,7 +185,8 @@ $laptop-width: 1024px;
   display: block;
   color: $color-orange-red;
   // mix-blend-mode: difference;
-  font-size: calc(22px + (30-22) * ((100vw - 320px) / (767 - 320)));
+  font-size: 28px;
+  font-size: 5.86vw;
   font-family: "Exo 2", sans-serif;
   letter-spacing: 0.09em;
   line-height: 1em;
@@ -198,13 +199,15 @@ $laptop-width: 1024px;
   //media queries
 
   @include tablet {
-    font-size: calc(32px + (3) * ((100vw - 768px) / (1023 - 768)));
+    font-size: 30px;
+    font-size: 4vw;
     margin-top: 2.5%;
     text-align: right;
   }
 
   @include laptop {
-    font-size: calc(48px + (3) * ((100vw - 1024px) / (1440 - 1024)));
+    font-size: 50px;
+    font-size: 4vw;
     margin-top: 3%;
     text-align: right;
   }
@@ -275,6 +278,7 @@ $laptop-width: 1024px;
 
   @include laptop {
     top: 200px;
+    top: 4vh;
   }
 }
 .social-btns .btn {
@@ -295,15 +299,21 @@ $laptop-width: 1024px;
 
   @include tablet {
     width: 85px;
+    width: 7vw;
     height: 85px;
+    height: 7vw;
     line-height: 85px;
+    line-height: 7vw;
     margin: 0 10px;
   }
 
   @include laptop {
     width: 120px;
+    width: 7vw;
     height: 120px;
+    height: 7vw;
     line-height: 120px;
+    line-height: 7vw;
     margin: 0 15px;
   }
 }
