@@ -41,5 +41,9 @@ $laptop-width: 1024px;
   padding-right: 40px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+
+  @include laptop {
+    justify-content: flex-end;
+  }
 }
