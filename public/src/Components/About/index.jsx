@@ -9,66 +9,10 @@ const About = () => (
   <div id="about">
     <PhoneBreakpoint>
       <div>
-        <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-          <div className="about-title">
-            <h1>Who I Am</h1>
-            <hr className="about-hr" />
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-          <div className="ch-grid">
-            <li>
-              <div className="ch-item">
-                <div className="ch-info" />
-                <div className="ch-thumb ch-img-1" />
-              </div>
-            </li>
-          </div>
-        </ScrollAnimation>
-        <div className="about-text-container">
-          <ul className="about-text-list">
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>am&ensp;</span> a fullstack engineer who is fascinated
-                with Javascript
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>adore&ensp;</span> React, RESTful API design/dev, Node, &
-                database technologies
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>value&ensp;</span> writing clean code & consistently
-                practicing even better habits
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>strive&ensp;</span> to build immersive applications that
-                can make a difference
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>care&ensp;</span> about my interactions & relationships
-                with the people I work with
-              </li>
-            </ScrollAnimation>
-          </ul>
-        </div>
-      </div>
-    </PhoneBreakpoint>
-    <TabletBreakpoint>
-      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="about-title">
           <h1>Who I Am</h1>
           <hr className="about-hr" />
         </div>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
         <div className="ch-grid">
           <li>
             <div className="ch-item">
@@ -77,9 +21,7 @@ const About = () => (
             </div>
           </li>
         </div>
-      </ScrollAnimation>
-      <div className="about-text-container">
-        <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
+        <div className="about-text-container">
           <ul className="about-text-list">
             <li>
               <span>am&ensp;</span> a fullstack engineer who is fascinated with
@@ -102,65 +44,87 @@ const About = () => (
               the people I work with
             </li>
           </ul>
-        </ScrollAnimation>
+        </div>
+      </div>
+    </PhoneBreakpoint>
+    <TabletBreakpoint>
+      <div className="about-title">
+        <h1>Who I Am</h1>
+        <hr className="about-hr" />
+      </div>
+      <div className="ch-grid">
+        <li>
+          <div className="ch-item">
+            <div className="ch-info" />
+            <div className="ch-thumb ch-img-1" />
+          </div>
+        </li>
+      </div>
+      <div className="about-text-container">
+        <ul className="about-text-list">
+          <li>
+            <span>am&ensp;</span> a fullstack engineer who is fascinated with
+            Javascript
+          </li>
+          <li>
+            <span>adore&ensp;</span> React, RESTful API design/dev, Node, &
+            database technologies
+          </li>
+          <li>
+            <span>value&ensp;</span> writing clean code & consistently
+            practicing even better habits
+          </li>
+          <li>
+            <span>strive&ensp;</span> to build immersive applications that can
+            make a difference
+          </li>
+          <li>
+            <span>care&ensp;</span> about my interactions & relationships with
+            the people I work with
+          </li>
+        </ul>
       </div>
     </TabletBreakpoint>
     <LaptopBreakpoint>
-      <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-        <div className="about-title">
-          <h1>Who I Am</h1>
-          <hr className="about-hr" />
-        </div>
-      </ScrollAnimation>
+      <div className="about-title">
+        <h1>Who I Am</h1>
+        <hr className="about-hr" />
+      </div>
 
       <div className="about-container">
-        <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-          <div className="about-picture-container">
-            <div className="ch-grid">
-              <li>
-                <div className="ch-item">
-                  <div className="ch-info" />
-                  <div className="ch-thumb ch-img-1" />
-                </div>
-              </li>
-            </div>
+        <div className="about-picture-container">
+          <div className="ch-grid">
+            <li>
+              <div className="ch-item">
+                <div className="ch-info" />
+                <div className="ch-thumb ch-img-1" />
+              </div>
+            </li>
           </div>
-        </ScrollAnimation>
+        </div>
         <div className="about-text-container">
-          <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-            <div className="about-text-letter-i">i</div>
-          </ScrollAnimation>
+          <div className="about-text-letter-i">i</div>
           <ul className="about-text-list">
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>am&ensp;</span> a fullstack engineer who is fascinated
-                with Javascript
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span className="list-item-word">adore&ensp;</span> React,
-                RESTful API design/dev, Node, & database technologies
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>value&ensp;</span> writing clean code & consistently
-                practicing even better habits
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>strive&ensp;</span> to build immersive applications that
-                can make a difference
-              </li>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInUp" animateOnce={true}>
-              <li>
-                <span>care&ensp;</span> about my interactions & relationships
-                with the people I work with
-              </li>
-            </ScrollAnimation>
+            <li>
+              <span>am&ensp;</span> a fullstack engineer who is fascinated with
+              Javascript
+            </li>
+            <li>
+              <span className="list-item-word">adore&ensp;</span> React, RESTful
+              API design/dev, Node, & database technologies
+            </li>
+            <li>
+              <span>value&ensp;</span> writing clean code & consistently
+              practicing even better habits
+            </li>
+            <li>
+              <span>strive&ensp;</span> to build immersive applications that can
+              make a difference
+            </li>
+            <li>
+              <span>care&ensp;</span> about my interactions & relationships with
+              the people I work with
+            </li>
           </ul>
         </div>
       </div>

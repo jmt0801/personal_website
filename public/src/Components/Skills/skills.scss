@@ -62,24 +62,35 @@ $laptop-width: 1024px;
 
 .skills-title {
   color: $color-orange-red;
-  font-size: 45px;
-  text-transform: uppercase;
-  padding-top: 50px;
+  font-size: 35px;
+  font-size: 7vw;
   font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
   letter-spacing: 12.5px;
 
+  @include tablet {
+    font-size: 45px;
+    font-size: 4.5vw;
+  }
+
   @include laptop {
-    font-size: 75px;
+    font-size: 60px;
+    font-size: 4.3vw;
   }
 }
 
 .skills-hr {
-  max-width: 100px;
+  max-width: 14vw;
   border-color: $color-orange-red;
-  border-top: 5px solid;
+  border-top: 0.5vh solid;
+
+  @include tablet {
+    border-top: 0.5vh solid;
+  }
 
   @include laptop {
-    border-top: 10px solid;
+    border-top: 0.5vh solid;
   }
 }
 
@@ -129,19 +140,25 @@ $laptop-width: 1024px;
 }
 
 .skills-main-container-laptop {
-  background: $color-whiteish;
-  margin: 0 100px 0 100px;
-  padding: 50px 0 50px 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  // background: $color-whiteish;
+  margin: 0 0 100px 0;
+  padding: 25px 0 25px 0;
+  // display: flex;
+  // flex-flow: row wrap;
+  // justify-content: center;
   // width: 80%;
+  display: grid;
+  grid-template-rows: 160px 160px 160px;
+  grid-template-columns: 250px 250px 250px;
+  grid-column-gap: 8px;
+  grid-row-gap: 13px;
+  justify-content: center;
 }
 
 .skills-container-laptop {
-  height: auto;
-  margin: 20px 1em;
-  padding: 1.5rem;
+  // height: auto;
+  // margin: 20px 1em;
+  // padding: 1.5rem;
   border-radius: 3px;
   background: $color-darker-blue;
   box-shadow: 0 1.5rem 4rem rgba(black, 0.25);
@@ -149,20 +166,22 @@ $laptop-width: 1024px;
   flex: 0 1 20pc;
   transition: transform 0.3s;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 
   i {
-    font-size: 5rem;
+    font-size: 3vw;
     color: $color-orange-red;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5vw;
   }
 
   h3 {
     color: $color-whiteish;
-    font-size: 25px;
+    font-size: 1vw;
     text-transform: uppercase;
   }
 
   &:hover {
-    transform: translateY(-1rem) scale(1.03);
+    transform: translateY(-0.5rem) scale(0.9);
   }
 }

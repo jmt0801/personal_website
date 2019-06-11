@@ -200,14 +200,14 @@ $laptop-width: 1024px;
 
   @include tablet {
     font-size: 30px;
-    font-size: 4vw;
+    font-size: 3.7vw;
     margin-top: 2.5%;
     text-align: right;
   }
 
   @include laptop {
     font-size: 50px;
-    font-size: 4vw;
+    font-size: 3.7vw;
     margin-top: 3%;
     text-align: right;
   }
