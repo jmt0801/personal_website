@@ -51,7 +51,7 @@ class Form extends Component {
       .then(res => {
         this.setState({ sent: true }, this.resetForm());
       })
-      .catch(() => {
+      .catch(err => {
         console.log("Message not sent because of error:", err);
       });
   };
