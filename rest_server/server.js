@@ -38,7 +38,7 @@ app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));
 //post resquest: receiving data through req.body
 //nodemailer
 
-app.post("/sentmsg", (req, res) => {
+app.post("/", (req, res) => {
   let data = req.body;
 
   const output = `
