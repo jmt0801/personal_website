@@ -47,7 +47,10 @@ class Home extends React.Component {
                 <a className="btn resume" href="#">
                   <i className="fab fa-adobe" />
                 </a>
-                <a className="btn linkedin" href="#">
+                <a
+                  className="btn linkedin"
+                  href="https://www.linkedin.com/in/jun-kim-475a055b/"
+                >
                   <i className="fab fa-linkedin-in" />
                 </a>
                 <a className="btn github" href="#">
@@ -70,10 +73,13 @@ class Home extends React.Component {
                 <a className="btn resume" href="#">
                   <i className="fab fa-adobe" />
                 </a>
-                <a className="btn linkedin" href="#">
+                <a
+                  className="btn linkedin"
+                  href="https://www.linkedin.com/in/jun-kim-475a055b/"
+                >
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a className="btn github" href="#">
+                <a className="btn github" href="https://github.com/hjk013">
                   <i className="fab fa-github" />
                 </a>
               </div>
