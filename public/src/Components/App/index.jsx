@@ -7,6 +7,7 @@ import About from "../About";
 import Skills from "../Skills";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
+import Footer from "../Footer";
 
 const App = () => (
   <div id="App">
@@ -19,8 +20,8 @@ const App = () => (
     <div className="parallax-3" />
     <Portfolio />
     <div className="parallax-4" />
-
     <Contact />
+    <Footer />
   </div>
 );
 
