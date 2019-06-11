@@ -47,12 +47,12 @@ class Form extends Component {
     };
 
     axios
-      .post("/", data)
+      .post("/sentmsg", data)
       .then(res => {
         this.setState({ sent: true }, this.resetForm());
       })
       .catch(() => {
-        console.log("Message not sent");
+        console.log("Message not sent because of error:", err);
       });
   };
 
