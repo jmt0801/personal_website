@@ -77,7 +77,7 @@ app.post("/sendmsg", (req, res, next) => {
       console.log("Message sent: %s", res.messageId);
       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(res));
       console.log("res", res);
-      res.end();
+      // res.end();
     }
   });
 
