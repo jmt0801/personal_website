@@ -33,53 +33,53 @@ app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));
 //post resquest: receiving data through req.body
 //nodemailer
 
-app.post("/sendmsg", (req, res, next) => {
-  let data = req.body;
+// app.post("/sendmsg", (req, res, next) => {
+//   let data = req.body;
 
-  const output = `
-   <p>You have a new contact request</p>
-   <h3>Contact Details</h3>
-    <ul>
-      <li>Name: ${data.name}</li>
-      <li>Email: ${data.email}</li>
-      <li>Phone: ${data.phone}</li>
-    </ul>
-    <h3>Message</h3>
-    <p>${data.message}</p>
- 
-  `;
+//   const output = `
+//    <p>You have a new contact request</p>
+//    <h3>Contact Details</h3>
+//     <ul>
+//       <li>Name: ${data.name}</li>
+//       <li>Email: ${data.email}</li>
+//       <li>Phone: ${data.phone}</li>
+//     </ul>
+//     <h3>Message</h3>
+//     <p>${data.message}</p>
 
-  console.log("req.body", req.body);
+//   `;
 
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    auth: {
-      type: "OAuth2",
-      user: process.env.USER_NAME,
-      clientId: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
-      refreshToken: process.env.REFRESH_TOKEN
-    }
-  });
+//   console.log("req.body", req.body);
 
-  let mailOptions = {
-    from: '"Nodemailer Contact" <hjk013@gmail.com>',
-    to: "hjk013@gmail.com",
-    subject: "SOMEONE SENT MSG FROM YOUR PERSONAL WEBSITE",
-    html: output
-  };
+//   const transporter = nodemailer.createTransport({
+//     host: "smtp.gmail.com",
+//     auth: {
+//       type: "OAuth2",
+//       user: process.env.USER_NAME,
+//       clientId: process.env.CLIENT_ID,
+//       clientSecret: process.env.CLIENT_SECRET,
+//       refreshToken: process.env.REFRESH_TOKEN
+//     }
+//   });
 
-  transporter.sendMail(mailOptions, (err, res) => {
-    if (err) {
-      console.log(err);
-    } else {
-      // console.log(JSON.stringify(res));
-      console.log("Message sent: %s", res.messageId);
-      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(res));
-      console.log("res", res);
-      // res.end();
-    }
-  });
+//   let mailOptions = {
+//     from: '"Nodemailer Contact" <hjk013@gmail.com>',
+//     to: "hjk013@gmail.com",
+//     subject: "SOMEONE SENT MSG FROM YOUR PERSONAL WEBSITE",
+//     html: output
+//   };
 
-  res.end();
-});
+//   transporter.sendMail(mailOptions, (err, res) => {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       // console.log(JSON.stringify(res));
+//       console.log("Message sent: %s", res.messageId);
+//       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(res));
+//       console.log("res", res);
+//       // res.end();
+//     }
+//   });
+
+//   res.end();
+// });

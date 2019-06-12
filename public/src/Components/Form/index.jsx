@@ -37,7 +37,7 @@ class Form extends Component {
         ...this.state
       })
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Thank you! I appreciate your contact!"))
       .catch(error => alert(error));
 
     e.preventDefault();
