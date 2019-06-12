@@ -47,10 +47,7 @@ class Form extends Component {
     };
 
     axios
-      .post(
-        "https://5d003e46f88877777f8b6fc5--thirsty-noyce-c704ba.netlify.com/",
-        data
-      )
+      .post("/sendmsg", data)
       .then(res => {
         this.setState({ sent: true }, this.resetForm());
       })
