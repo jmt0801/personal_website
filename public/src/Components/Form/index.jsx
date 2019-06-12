@@ -8,6 +8,12 @@ import TabletBreakpoint from "../responsive_utilities/tablet_bp";
 import PhoneBreakpoint from "../responsive_utilities/phone_bp";
 import ScrollAnimation from "react-animate-on-scroll";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class Form extends Component {
   constructor(props) {
     super(props);
@@ -15,91 +21,78 @@ class Form extends Component {
     this.state = {
       name: "",
       email: "",
-      message: "",
       phone: "",
-      sent: false,
-      buttonText: "Send Message"
+      message: ""
     };
-
-    //self reminder: to ensure 'this' when calling 'this.updateField' refers to Form and not Field
-    this.updateField = this.updateField.bind(this);
-  }
-  // field could be 'name' 'email' or 'message'
-  // value is whatever the use types into the input field
-  updateField(field, value) {
-    //self reminder: remember, without the [], it's looking for field:value which does not exist
-    this.setState({ [field]: value });
   }
 
-  //form submit func
-  formSubmit = e => {
-    e.preventDefault();
-
-    this.setState({
-      buttonText: "...sending"
-    });
-
-    let data = {
-      name: this.state.name,
-      email: this.state.email,
-      phone: this.state.phone,
-      message: this.state.message
-    };
-
-    axios
-      .post("https://elegant-edison-ef1a5f.netlify.com", data)
-      .then(res => {
-        this.setState({ sent: true }, this.resetForm());
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        "data-netlify-honeypot": "bot-field",
+        ...this.state
       })
-      .catch(err => {
-        console.log("Message not sent because of", err);
-      });
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
   };
 
-  //reset after sending func
-  resetForm = () => {
-    this.setState({
-      name: "",
-      message: "",
-      email: "",
-      phone: "",
-      buttonText: "Message Sent!"
-    });
-  };
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
+    const { name, email, phone, message } = this.state;
+
     return (
       <div id="form">
         <div className="contact-container">
           <h1>I'd love to hear from you.</h1>
           <h2>Feedbacks of any kind are welcome too!</h2>
           {/* /* Name Field */}
-          <Field
-            label="Name"
-            onChange={event => this.updateField("name", event.target.value)}
-            value={this.state.name}
-          />
-          {/* {/* /* Email Field * */}
-          <Field
-            label="E-mail"
-            onChange={event => this.updateField("email", event.target.value)}
-            value={this.state.email}
-          />
-          <Field
-            label="Phone"
-            onChange={event => this.updateField("phone", event.target.value)}
-            value={this.state.phone}
-          />
-          {/* Message textarea */}
-          <Field
-            label="Message"
-            onChange={event => this.updateField("message", event.target.value)}
-            textarea={true}
-            value={this.state.message}
-          />
-          {/* <Button formValues={this.state} email="hjk013@gmail.com" /> */}
-
-          <button onClick={this.formSubmit}>{this.state.buttonText}</button>
+          <form className="contform" onSubmit={this.handleSubmit}>
+            <p>
+              <input
+                type="text"
+                name="name"
+                value={name}
+                placeholder="Your Name"
+                onChange={this.handleChange}
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                name="email"
+                value={email}
+                placeholder="Your E-mail"
+                onChange={this.handleChange}
+              />
+            </p>
+            <p>
+              <input
+                type="phone"
+                name="phone"
+                value={phone}
+                placeholder="Your Phone Number"
+                onChange={this.handleChange}
+              />
+            </p>
+            <p>
+              <textarea
+                name="message"
+                value={message}
+                onChange={this.handleChange}
+                placeholder="Message"
+              />
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
         </div>
         <div className="info-container">
           <i className="fa fa-envelope" aria-hidden="true" />
