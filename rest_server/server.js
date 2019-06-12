@@ -20,17 +20,12 @@ app.get(" * ", (req, res) => {
 });
 
 app.use(function(req, res, next) {
-  console.log("request", req.url, req.body, req.method);
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept, x-token"
+    "Origin, X-Requested-With, Content-Type, Accept"
   );
-  if (req.method === "OPTIONS") {
-    res.end();
-  } else {
-    next();
-  }
+  next();
 });
 
 app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));
@@ -38,7 +33,7 @@ app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));
 //post resquest: receiving data through req.body
 //nodemailer
 
-app.post("/sentmsg", (req, res) => {
+app.post("/", (req, res, next) => {
   let data = req.body;
 
   const output = `
