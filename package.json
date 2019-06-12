@@ -4,8 +4,10 @@
   "description": "Jun Kim_Personal Website",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -w",
-    "start": "nodemon rest_server/server.js"
+    "build": "webpack -p",
+    "webpack": "webpack -w",
+    "start": "nodemon rest_server/server.js",
+    "now-build": "npm run build"
   },
   "author": "Jun Kim",
   "license": "ISC",
@@ -46,7 +48,6 @@
     "style-loader": "^0.23.1",
     "styled-components": "^4.2.0",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
     "xoauth2": "^1.2.0"
   },
   "devDependencies": {
@@ -64,6 +65,7 @@
     "express": "^4.16.4",
     "nodemon": "^1.18.10",
     "path": "^0.12.7",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "webpack-cli": "^3.3.4"
   }
 }
