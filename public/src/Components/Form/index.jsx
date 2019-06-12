@@ -47,7 +47,7 @@ class Form extends Component {
     };
 
     axios
-      .post(DEPLOY_URL, data)
+      .post("https://personalwebsite-7nmwfbt6h.now.sh/sendmsg", data)
       .then(res => {
         this.setState({ sent: true }, this.resetForm());
       })

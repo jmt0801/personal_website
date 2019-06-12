@@ -1,12 +1,27 @@
 {
-  "name": "personal_website",
-  "alias": "www.thejunkim.com",
   "version": 2,
+  "name": "personal_website",
   "builds": [
+    {
+      "src": "./rest_server/server.js",
+      "use": "@now/node-server",
+      "config": { "maxLambdaSize": "150mb" }
+    },
     {
       "src": "package.json",
       "use": "@now/static-build",
       "config": { "distDir": "./public/dist" }
+    }
+  ],
+  "routes": [
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/.*",
+      "dest": "./rest_server/server.js"
     }
   ]
 }
