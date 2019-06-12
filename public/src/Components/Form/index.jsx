@@ -32,7 +32,6 @@ class Form extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact",
-        "data-netlify-honeypot": "bot-field",
         ...this.state
       })
     })
