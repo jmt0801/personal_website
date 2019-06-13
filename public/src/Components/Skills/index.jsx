@@ -13,6 +13,8 @@ const Skills = () => (
           <h1>My Skills</h1>
           <hr className="skills-hr" />
         </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="bounceInUp" animateOnce="true">
         <div className="skills-main-container">
           <div className="skills-container">
             <i className="fab fa-js-square " />
