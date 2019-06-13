@@ -8,20 +8,22 @@ import ScrollAnimation from "react-animate-on-scroll";
 const About = () => (
   <div id="about">
     <PhoneBreakpoint>
-      <ScrollAnimation animateIn="bounceInUp" animateOnce="true">
-        <div>
+      <div>
+        <ScrollAnimation animateIn="bounceInUp" animateOnce="true">
           <div className="about-title">
             <h1>Who I Am</h1>
             <hr className="about-hr" />
           </div>
-          <div className="ch-grid">
-            <li>
-              <div className="ch-item">
-                <div className="ch-info" />
-                <div className="ch-thumb ch-img-1" />
-              </div>
-            </li>
-          </div>
+        </ScrollAnimation>
+        <div className="ch-grid">
+          <li>
+            <div className="ch-item">
+              <div className="ch-info" />
+              <div className="ch-thumb ch-img-1" />
+            </div>
+          </li>
+        </div>
+        <ScrollAnimation animateIn="bounceInUp" animateOnce="true">
           <div className="about-text-container">
             <ul className="about-text-list">
               <li>
@@ -46,8 +48,8 @@ const About = () => (
               </li>
             </ul>
           </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
     </PhoneBreakpoint>
     <TabletBreakpoint>
       <div className="about-title">

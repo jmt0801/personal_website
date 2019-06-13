@@ -28,6 +28,8 @@ class Portfolio extends React.Component {
               <h1>Recent Projects</h1>
               <hr className="portfolio-hr" />
             </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="bounceInUp" animateOnce="true">
             <div className="portfolio-container">
               <div className="mobile-portfolio-card">
                 <div className="mobile-card-pic mobile-card-pic--1" />
