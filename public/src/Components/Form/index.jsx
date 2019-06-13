@@ -49,61 +49,63 @@ class Form extends Component {
     const { name, email, phone, message } = this.state;
 
     return (
-      <div id="form">
-        <div className="contact-container">
-          <h1>I'd love to hear from you.</h1>
-          <h2>Feedbacks of any kind are welcome too!</h2>
-          {/* /* Name Field */}
-          <form className="contform" onSubmit={this.handleSubmit}>
-            <p>
-              <input
-                type="text"
-                name="name"
-                value={name}
-                placeholder="Your Name"
-                onChange={this.handleChange}
-              />
-            </p>
-            <p>
-              <input
-                type="email"
-                name="email"
-                value={email}
-                placeholder="Your E-mail"
-                onChange={this.handleChange}
-              />
-            </p>
-            <p>
-              <input
-                type="phone"
-                name="phone"
-                value={phone}
-                placeholder="Your Phone Number"
-                onChange={this.handleChange}
-              />
-            </p>
-            <p>
-              <textarea
-                name="message"
-                value={message}
-                onChange={this.handleChange}
-                placeholder="Message"
-              />
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
+      <ScrollAnimation animateIn="bounceInUp" animateOnce="true">
+        <div id="form">
+          <div className="contact-container">
+            <h1>I'd love to hear from you.</h1>
+            <h2>Feedbacks of any kind are welcome too!</h2>
+            {/* /* Name Field */}
+            <form className="contform" onSubmit={this.handleSubmit}>
+              <p>
+                <input
+                  type="text"
+                  name="name"
+                  value={name}
+                  placeholder="Your Name"
+                  onChange={this.handleChange}
+                />
+              </p>
+              <p>
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  placeholder="Your E-mail"
+                  onChange={this.handleChange}
+                />
+              </p>
+              <p>
+                <input
+                  type="phone"
+                  name="phone"
+                  value={phone}
+                  placeholder="Your Phone Number"
+                  onChange={this.handleChange}
+                />
+              </p>
+              <p>
+                <textarea
+                  name="message"
+                  value={message}
+                  onChange={this.handleChange}
+                  placeholder="Message"
+                />
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </div>
+          <div className="info-container">
+            <i className="fa fa-envelope" aria-hidden="true" />
+            <span>hjk013@gmail.com</span>
+            <i className="fa fa-phone-square" aria-hidden="true" />
+            <span>(909)292-5001 </span>
+            <i className="fa fa-location-arrow" aria-hidden="true" />
+            <span>Los Angeles, CA </span>
+          </div>
         </div>
-        <div className="info-container">
-          <i className="fa fa-envelope" aria-hidden="true" />
-          <span>hjk013@gmail.com</span>
-          <i className="fa fa-phone-square" aria-hidden="true" />
-          <span>(909)292-5001 </span>
-          <i className="fa fa-location-arrow" aria-hidden="true" />
-          <span>Los Angeles, CA </span>
-        </div>
-      </div>
+      </ScrollAnimation>
     );
   }
 }
