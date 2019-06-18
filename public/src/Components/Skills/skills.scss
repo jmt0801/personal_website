@@ -125,9 +125,9 @@ $laptop-width: 1024px;
     color: $color-orange-red;
   }
 
-  &:hover {
-    transform: translateY(-1rem) scale(1.03);
-  }
+  // &:hover {
+  //   transform: translateY(-1rem) scale(1.03);
+  // }
 
   @include tablet {
     h3 {
