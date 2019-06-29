@@ -134,7 +134,6 @@ const Skills = () => (
             <h3>webpack/parcel</h3>
           </div>
         </div>
-        /
       </ScrollAnimation>
     </LaptopBreakpoint>
   </div>
