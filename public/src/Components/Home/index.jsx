@@ -20,7 +20,10 @@ class Home extends React.Component {
                   <h2 className="home-h2">Software Engineer</h2>
                 </Animated>
                 <div className="social-btns">
-                  <a className="btn resume" href="#">
+                  <a
+                    className="btn resume"
+                    href="../../../dist/images/Jun_Kim_Resume.pdf"
+                  >
                     <i className="fab fa-adobe" />
                   </a>
                   <a
