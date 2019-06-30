@@ -6,6 +6,7 @@ import PhoneBreakpoint from "../responsive_utilities/phone_bp";
 import bg_img from "../../../dist/images/main_bg_400.jpg";
 import { Animated } from "react-animated-css";
 import ScrollAnimation from "react-animate-on-scroll";
+import Resume from "../../../dist/images/Jun_Kim_Resume.pdf";
 
 class Home extends React.Component {
   render() {
@@ -20,10 +21,7 @@ class Home extends React.Component {
                   <h2 className="home-h2">Software Engineer</h2>
                 </Animated>
                 <div className="social-btns">
-                  <a
-                    className="btn resume"
-                    href="../../../dist/images/Jun_Kim_Resume.pdf"
-                  >
+                  <a className="btn resume" href={Resume}>
                     <i className="fab fa-adobe" />
                   </a>
                   <a
@@ -50,10 +48,7 @@ class Home extends React.Component {
               </Animated>
 
               <div className="social-btns">
-                <a
-                  className="btn resume"
-                  href="../../../dist/images/Jun_Kim_Resume.pdf"
-                >
+                <a className="btn resume" href={Resume}>
                   <i className="fab fa-adobe" />
                 </a>
                 <a
@@ -79,10 +74,7 @@ class Home extends React.Component {
                 <h2 className="home-h2">Software Engineer</h2>
               </Animated>
               <div className="social-btns">
-                <a
-                  className="btn resume"
-                  href="../../../dist/images/Jun_Kim_Resume.pdf"
-                >
+                <a className="btn resume" href={Resume}>
                   <i className="fab fa-adobe" />
                 </a>
                 <a
