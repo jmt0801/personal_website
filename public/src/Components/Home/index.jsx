@@ -79,7 +79,7 @@ class Home extends React.Component {
                 </a>
                 <a
                   className="btn linkedin"
-                  href="https://www.linkedin.com/in/jun-kim-475a055b/"
+                  href="https://www.linkedin.com/in/hjk013"
                 >
                   <i className="fab fa-linkedin-in" />
                 </a>
