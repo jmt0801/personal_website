@@ -6,7 +6,7 @@ import PhoneBreakpoint from "../responsive_utilities/phone_bp";
 import bg_img from "../../../dist/images/main_bg_400.jpg";
 import { Animated } from "react-animated-css";
 import ScrollAnimation from "react-animate-on-scroll";
-import Resume from "../../../dist/images/Jun_Kim_Resume.pdf";
+import Resume from "../../../dist/images/Most_Recent_Jun_Kim_Resume (1).pdf";
 
 class Home extends React.Component {
   render() {
